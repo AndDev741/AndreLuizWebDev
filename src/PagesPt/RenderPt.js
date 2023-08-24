@@ -1,5 +1,7 @@
+import NavbarPt from "./Components/NavbarPt";
+
 export default function RenderPt() {
     return(
-        <h1>Rnderizado em Português :D</h1>
+        <NavbarPt/>
     )
 }

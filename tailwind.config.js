@@ -24,7 +24,8 @@ export default {
         footerBorderR: "6px 0px 0px 6px",
       },
       fontFamily: {
-        mainFont: "",
+        pFont:'Fira Sans , sans-serif',
+        hFont:'Noto Sans , sans-serif'
       },
     },
   },
