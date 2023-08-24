@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route exact path='/en' Component={Render} />
-        <Route exact path='/pt' Component={RenderPt}/>
+        <Route exact path='/pt' Component={RenderPt} />
       </Routes>
     </div>
   );
