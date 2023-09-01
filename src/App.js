@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route exact path='/en' element={<Render />} />
+        <Route path='/' element={<RenderPt />} />
         <Route path='/pt' element={<RenderPt />} />
       </Routes>
     </div>

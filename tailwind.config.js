@@ -3,11 +3,11 @@ export default {
   theme: {
     screens: {
       xs: "200px",
-      sm: "360px",
-      ms: "600px",
-      md: "800px",
-      lg: "900px",
-      xl: "1280px",
+      sm: "480px",
+      ms: "768px",
+      md: "850px",
+      lg: "1000px",
+      xl: "1245px",
       "2xl": "1536px",
     },
     prefix: "tw-",
@@ -27,6 +27,21 @@ export default {
         pFont:'Fira Sans , sans-serif',
         hFont:'Noto Sans , sans-serif'
       },
+      animation: {
+        smoothMove: 'move 3s infinite alternate',
+        smoothMoveMB: 'moveMB 2s infinite alternate',
+        underlineMove: 'underline 2s'
+      },
+      keyframes: {
+        move: {
+          '0%': {transform: 'translateX(0)'},
+          '100%': {transform: 'translateX(20px)'},
+        },
+        moveMB: {
+          '0%': {transform: 'translateY(0)'},
+          '100%': {transform: 'translateY(20px)'}
+        }
+      }
     },
   },
   plugins: [],
