@@ -40,25 +40,25 @@ function ServicesResume(){
             </div>
            
             <div className="flex flex-col md:flex-row items-center md:justify-around flex-wrap">
-                <div className="flex flex-col items-center xl:items-start justify-center my-4 mx-12 xl:mx-0 ">
+                <div className="flex flex-col w-1/2 items-center xl:items-start justify-center my-4">
                     <h2 className="text-[38px] mb-4"><b>Websites</b></h2>
                     <div className="flex items-end w-[279px] h-[279px] rounded-[12px] bg-white">
                         <img src={websiteIMG} alt='webdeveloper' className='rounded-[12px] hover:animate-pulse' />
                     </div>
                 </div>
-                <div className="flex flex-col items-center xl:items-start my-4 mx-12 xl:mx-0 ">
+                <div className="flex flex-col w-1/2 items-center xl:items-start my-4 ">
                     <h2 className=" text-[38px] mb-4"><b>Design</b></h2>
                     <div className="flex items-end w-[279px] h-[279px] rounded-[12px] bg-white">
                         <img src={designIMG} alt='designer' className='rounded-[12px] hover:animate-pulse'/>
                     </div>
                 </div>
-                <div className="flex flex-col items-center xl:items-start my-4 mx-12 xl:mx-0 ">
+                <div className="flex flex-col w-1/2 items-center xl:items-start my-4 xl:mx-0 ">
                     <h2 className="text-[38px] mb-4"><b>SEO Tatics</b></h2>
                     <div className="flex items-end w-[279px] h-[279px] rounded-[12px] bg-white">
                         <img src={seoIMG} alt='seo strategies' className='rounded-[12px] hover:animate-pulse' />
                     </div>
                 </div>
-                <div className="flex flex-col items-center xl:items-start my-4 mx-12 xl:mx-0 ">
+                <div className="flex flex-col w-1/2 items-center xl:items-start my-4 xl:mx-0 ">
                     <h2 className="text-[38px] mb-4"><b>You on Internet</b></h2>
                     <div className="flex items-end w-[279px] h-[279px] rounded-[12px] bg-white">
                         <img src={youinternetIMG} alt='you on internet' className='rounded-[12px] hover:animate-pulse' />
@@ -81,20 +81,20 @@ function WhyServices() {
             <div className="flex flex-col items-center lg:items-start font-pFont lg:mr-[100px]">
                 <h1 className="font-hFont text-[50px] lg:text-[65px] lg:text-left text-center mt-6">Why choose <br /> me?</h1>
                 <div className="flex flex-col lg:flex-row items-center hover:animate-smoothMove">
-                    <img src={growIMG} alt='rocket image' className='my-8 lg:w-[80px]'/>
+                    <img src={growIMG} alt='rocket' className='my-8 lg:w-[80px]'/>
                     <p className="text-3xl lg:ml-8">Your business gonna <b>grow</b></p>
                 </div>
                 <div className="flex flex-col lg:flex-row items-center justify-start hover:animate-smoothMove">
-                    <img src={fastIMG} alt='fast clock image' className='my-8 lg:w-[80px] mr-4 lg:mr-0'/>
+                    <img src={fastIMG} alt='fast clock' className='my-8 lg:w-[80px] mr-4 lg:mr-0'/>
                     <p className="text-3xl lg:ml-8">It's gonna be <b>fast</b></p>
                 </div>
                 <div className="flex flex-col lg:flex-row items-center hover:animate-smoothMove">
-                    <img src={identityIMG} alt='person image' className='my-8 lg:w-[80px]'/>
+                    <img src={identityIMG} alt='person' className='my-8 lg:w-[80px]'/>
                     <p className="text-3xl lg:ml-8">I make with your <b>identity</b></p>
                 </div>
             </div>
             <div className="flex items-center justify-center">
-                <img src={servicesIMG} className='animate-smoothMoveMB sm:w-[60%] lg:w-[75%]' />
+                <img src={servicesIMG} alt="services icon" className='animate-smoothMoveMB sm:w-[60%] lg:w-[75%]' />
             </div>
     </div>
     )

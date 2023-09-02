@@ -15,12 +15,12 @@ export default function Home() {
                         I made everything that you <u>need</u>, since the <b>design, engineering, SEO tactics</b>  and more </p>
                     <button className="flex items-center bg-black w-[257px] h-[63px] rounded-[24px] mt-5 lg>mt-2
                             hover:scale-95">
-                        <img src={whatsBlackIcon} className='ml-[20px]'/>
+                        <img src={whatsBlackIcon} alt='whatsapp icon' className='ml-[20px]'/>
                         <h2 className="text-white text-[24px] font-[800] ml-3">Contact me</h2>
                     </button>
                 </div>
                 <div className="flex justify-center mb-6">
-                    <img src={homeImage} className=' w-[400px] lg:w-[80%] animate-smoothMoveMB lg:animate-smoothMove'/>
+                    <img src={homeImage} alt="homepage" className=' w-[400px] lg:w-[80%] animate-smoothMoveMB lg:animate-smoothMove'/>
                 </div>
             </div>
         </Element>

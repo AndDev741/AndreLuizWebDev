@@ -1,5 +1,5 @@
 import './App.css';
-import {Routes, Route, Link } from 'react-router-dom';
+import {Routes, Route } from 'react-router-dom';
 import Render from './PagesEn/Render';
 import RenderPt from './PagesPt/RenderPt';
 
