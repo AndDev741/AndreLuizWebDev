@@ -46,9 +46,9 @@ export default function Navbar() {
             </div>
             <div className="hidden xl:flex items-center ml-12">
                 <a href="https://www.linkedin.com/in/andr%C3%A9-luiz-dev-b9915b275/?locale=en_US" target={"_blank"} rel='noreferrer'> 
-                    <img src={lnkdLogo} alt='Linkedin logo' className="ml-3"/></a>
+                    <img src={lnkdLogo} alt='Linkedin logo' className="ml-3 hover:scale-95"/></a>
                 <a href="https://github.com/AndDev741" target={"_blank"} rel='noreferrer'>
-                    <img src={gthbLogo} alt='Github logo' className="ml-3"/></a>
+                    <img src={gthbLogo} alt='Github logo' className="ml-3 hover:scale-95"/></a>
             </div>
             <div>
                 <img src={menuMB} alt='menu'
