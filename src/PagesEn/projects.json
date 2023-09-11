@@ -1,0 +1,24 @@
+{
+    "projects": [
+        {
+            "id": 0,
+            "title": "MindBlowing Mornings",
+            "phrase": "Mind Blowing Morning was a amazing site that i help build for the tann mann gaadi company, a institution from India. I work as a front-end developer, building the page according to the design and making new funcionalites",
+            "pcGIF": "./Assets/mindBlowingGIF.webm",
+            "mbIMG": "./Assets/mindBlowingIMG.png",
+            "pageLink": "https://mindblowingmornings.com/",
+            "githubLink": "https://github.com/AndDev741/Mind-Blowing-Morning/",
+            "privacy": true
+        },
+        {
+            "id": 1,
+            "title": "MindBlowingMorning",
+            "phrase": "A GENIUS",
+            "pcGIF": "./Assets/mindBlowingGIF.webm",
+            "mbIMG": "./Assets/mindBlowingIMG.png",
+            "pageLink": "https://mindblowingmornings.com/",
+            "githubLink": "https://github.com/AndDev741/Mind-Blowing-Morning/",
+            "privacy": true
+        }
+    ]
+}
