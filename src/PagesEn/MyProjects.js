@@ -13,6 +13,9 @@ import jmServiçosGIF from './Assets/jmServiçosGIF.webm'
 import jmServiçosIMG from './Assets/jmServiçosIMG.png'
 import GYRGIF from './Assets/GYRGIF.webm'
 import GYRIMG from './Assets/GYRIMG.png'
+import siteIMG from './Assets/siteIMG.png'
+import designIMG from './Assets/designsIMG.png'
+import howIMG from './Assets/howIMG.png'
    
 
 export default function MyProjects() {
@@ -33,13 +36,12 @@ export default function MyProjects() {
     function handleNext(){
         setId(id + 1)
     }
-    console.log(data.projects.length)
 
 
 
     return(
         <Element name="myprojects" className="font-pFont mt-4 mb-12">
-            <div className='mt-8'>
+            <div className='my-12'>
                 <div className="lg:flex items-center">
                     <div className="bg-black lg:w-[800px]">
                         <h1 className="text-[60px] lg:text-[70px] font-hFont text-center text-white">Projects <br className="block lg:hidden" /> that i made</h1>
@@ -90,6 +92,37 @@ export default function MyProjects() {
                     </div>
                 </div>
             </div>
+            <HowIMake />
         </Element>
+    )
+}
+
+function HowIMake() {
+    return(
+        <div className="font-pFont mt-12">
+        <h1 className="text-[60px] md:text-[70px] text-center lg:text-left font-hFont lg:ml-8">How i make them</h1>
+        <div className="flex flex-col lg:items-center md:flex-row lg:justify-evenly lg:mx-12">
+            <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center lg:items-start w-[98%] sm:w-[90%] md:w-[80%] lg:w-[580px] h-[100%] pb-3 lg:pb-0 lg:h-[280px] border-[2px] border-black rounded-[6px] mt-8">
+                    <div className="flex items-center flex-wrap">
+                        <img src={siteIMG} />
+                        <h1 className="font-hFont text-[50px] 3xl ml-6">Websites</h1>
+                    </div>
+                    <p className="text-3xl text-center lg:text-start mt-4 lg:ml-2">I use <strong>React JS</strong>  to make all the websites from zero, making every one with a lot of <strong>personality</strong> and amazing <strong>functionalities</strong></p>
+                </div>
+                <div className="flex flex-col items-center  lg:items-start w-[98%] sm:w-[90%] md:w-[80%] lg:w-[580px] h-[100%] pb-3 lg:pb-0 lg:h-[280px] border-[2px] border-black rounded-[6px] mt-8">
+                    <div className="flex items-center flex-wrap sm:ml-3">
+                        <img src={designIMG} />
+                        <h1 className="font-hFont text-[50px] 3xl ml-12 lg:ml-8">Design</h1>
+                    </div>
+                    <p className="text-3xl text-center lg:text-start mt-4 lg:ml-2"><strong>Figma</strong>  its the software that i choose to make all this beautiful websites design, with a lot of <strong>UI</strong> and <strong>UX</strong> strategies</p>
+                </div>
+            </div>
+            <div className='flex items-center justify-center'>
+            <img src={howIMG} className='w-[100%] sm:w-[80%] md:w-[100%] animate-smoothMoveMB lg:animate-smoothMove'/>
+            </div>
+        </div>     
+        
+        </div>
     )
 }
