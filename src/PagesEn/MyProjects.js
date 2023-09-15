@@ -3,16 +3,19 @@ import { useState } from "react"
 import { Link as Linkar } from "react-scroll";
 import data from './projects.json'
 //images
-import mindBlowingIMG from './Assets/mindBlowingIMG.png'
 import pageIMG from './Assets/pageIMG.png'
 import nextIMG from './Assets/nextIMG.png'
 import githubIMG from './Assets/githubIMG.png'
 import projectsIMG from './Assets/projectsIMG.png'
-import mindBlowingGIF from './Assets/mindBlowingGIF.webm'
+import mindblowingGIF from './Assets/mindBlowingGIF.webm'
+import mindblowingIMG from './Assets/mindBlowingIMG.png'
+import jmServiçosGIF from './Assets/jmServiçosGIF.webm'
+import jmServiçosIMG from './Assets/jmServiçosIMG.png'
+import GYRGIF from './Assets/GYRGIF.webm'
+import GYRIMG from './Assets/GYRIMG.png'
    
 
 export default function MyProjects() {
-
     let [githubLink, setGithubLink] = useState(false)
     function handleLink() {
         if (githubLink === true) {
@@ -22,17 +25,16 @@ export default function MyProjects() {
         }
     }
 
+    function doNot() {
+        setGithubLink(githubLink)
+    }
+
     let [id, setId] = useState(0);
     function handleNext(){
         setId(id + 1)
-    } 
-    
-    const project = data.projects[id]
-    const importImage = () => import(`${project.pcGIF}`)
+    }
+    console.log(data.projects.length)
 
-
-    console.log(data.projects[id].pcGIF)
-    console.log(importImage)
 
 
     return(
@@ -48,9 +50,9 @@ export default function MyProjects() {
                      <div className="fixed top-0 lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 left-0 w-[100vw] lg:w-[60vw] h-[100vh] lg:h-[600px] bg-black overflow-hidden lg:rounded text-white flex flex-col items-center justify-evenly text-center">
                         <h1 className="font-hFont text-[40px] mt-8">Unfortunaly i can't provide the source code of this project </h1>
                         <p className="text-xl">You can see a part of the code here:</p>
-                        <button className="border-2 border-white ronded m-6"><a target={"_blank"} className='text-xl underline m-6'
+                        <button className="border-2 border-white ronded m-6"><a href={data.projects[id].githubLink} target={"_blank"} className='text-xl underline m-6'
                         onClick={handleLink}>See the code</a></button>
-                        <Linkar className='text-2xl underline m-6 cursor-pointer' to='myprojects' onClick={handleLink}>Go back</Linkar>
+                        <Linkar className='text-2xl underline m-6 cursor-pointer' to='myprojects' smooth={true} onClick={handleLink}>Go back</Linkar>
                      </div>
                 </div>
                 <div className="">
@@ -58,24 +60,29 @@ export default function MyProjects() {
                         <div className="flex flex-col items-center justify-center order-2 lg:order-none">
                             <div className="flex flex-col items-center my-4">
                                 <img src={pageIMG} alt='page icon' className="mt-6 mb-2" />
-                                <a href='' target={"_blank"} className='text-xl underline  cursor-pointer mt-4'>See the page</a>
+                                <a href={data.projects[id].pageLink} target={"_blank"} className='text-xl underline  cursor-pointer mt-4'>See the page</a>
                             </div>
                             <div className="flex flex-col items-center my-4">
                                 <img src={nextIMG} alt='page icon' className="mt-6 mb-2 w-[68px]" />
-                                <button className='text-xl underline cursor-pointer' onClick={handleNext}>Next Project</button>
+                                <button className='text-xl underline cursor-pointer' onClick={id === data.projects.length - 1 ? setId(0) : handleNext}>Next Project</button>
                             </div>  
                             <div className="flex flex-col items-center my-4">
                                 <img src={githubIMG} alt='page icon' className="mt-6 mb-2" />
-                                <a target={"_blank"} className='text-xl underline cursor-pointer'
-                                onClick={handleLink}>See the code</a>
+                                <a href={data.projects[id].privacy === false ? data.projects[id].githubLink : doNot} target={"_blank"} className='text-xl underline cursor-pointer'
+                                onClick={data.projects[id].privacy === true ? handleLink : doNot}>See the code</a>
                             </div>
                         </div>
                         <div className="bg-[#d9d9d9] rounded-[12px] w-[276px] h-[452px]">
-                            <img src={importImage} alt='Mind blowing morning site' className="w-[276px] h-[452px] rounded-[12px]" />
+                            <img src={`${process.env.PUBLIC_URL}/static/media/${data.projects[id].mbIMG}`} alt='Mind blowing morning site' className="w-[276px] h-[452px] rounded-[12px]" />
                         </div>
                         <div className="flex flex-col items-center">
                             <div className="hidden lg:block bg-[#d9d9d9] rounded-[12px] w-[620px] h-[352px]">
-                            <video src={mindBlowingGIF} type='video/webm' autoPlay={true} controls={true} className='rounded-[12px]'></video>
+                        <video 
+                            src={`${process.env.PUBLIC_URL}/static/media/${data.projects[id].pcGIF}`}
+                            type='video/webm' 
+                            autoPlay={true} 
+                            controls={true} 
+                            className='rounded-[12px]'></video>
                             </div>
                             <h1 className="text-3xl font-hFont text-center my-6">{data.projects[id].title}</h1>
                             <p className="text-xl text-center w-[85vw] lg:w-[664px]">{data.projects[id].phrase}</p>
