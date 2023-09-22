@@ -43,8 +43,8 @@ export default function MyProjects() {
         <Element name="myprojects" className="font-pFont mt-4 mb-12">
             <div className='my-12'>
                 <div className="lg:flex items-center">
-                    <div className="bg-black lg:w-[800px]">
-                        <h1 className="text-[60px] lg:text-[70px] font-hFont text-center text-white">Projects <br className="block lg:hidden" /> that i made</h1>
+                    <div className="bg-black lg:w-[950px]">
+                        <h1 className="text-[60px] lg:text-[70px] font-hFont text-center text-white m-1">Projects <br className="block lg:hidden" /> that i made</h1>
                     </div>
                     <img src={projectsIMG} alt='desktop icon' className="hidden lg:block ml-[100px]" />
                 </div>
@@ -101,7 +101,7 @@ function HowIMake() {
     return(
         <div className="font-pFont mt-12">
         <h1 className="text-[60px] md:text-[70px] text-center lg:text-left font-hFont lg:ml-8">How i make them</h1>
-        <div className="flex flex-col lg:items-center md:flex-row lg:justify-evenly lg:mx-12">
+        <div className="flex flex-col lg:items-center md:flex-row lg:justify-center lg:mx-12">
             <div className="flex flex-col items-center">
                 <div className="flex flex-col items-center lg:items-start w-[98%] sm:w-[90%] md:w-[80%] lg:w-[580px] h-[100%] pb-3 lg:pb-0 lg:h-[280px] border-[2px] border-black rounded-[6px] mt-8">
                     <div className="flex items-center flex-wrap">
