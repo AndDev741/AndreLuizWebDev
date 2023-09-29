@@ -78,14 +78,14 @@ export default function MyProjects() {
                             <img src={`${process.env.PUBLIC_URL}/static/media/${data.projects[id].mbIMG}`} alt='Mind blowing morning site' className="w-[276px] h-[452px] rounded-[12px]" />
                         </div>
                         <div className="flex flex-col items-center">
-                            <div className="hidden lg:block bg-[#d9d9d9] rounded-[12px] w-[620px] h-[352px]">
-                        <video 
+                        <div className="hidden lg:block bg-[#d9d9d9] rounded-[12px] w-[620px] h-[352px]">
+                            <video 
                             src={`${process.env.PUBLIC_URL}/static/media/${data.projects[id].pcGIF}`}
                             type='video/webm' 
                             autoPlay={true} 
                             controls={true} 
                             className='rounded-[12px]'></video>
-                            </div>
+                        </div>
                             <h1 className="text-3xl font-hFont text-center my-6">{data.projects[id].title}</h1>
                             <p className="text-xl text-center w-[85vw] lg:w-[664px]">{data.projects[id].phrase}</p>
                         </div>

@@ -10,9 +10,9 @@ import { IoArrowBackCircleOutline, IoArrowForwardCircleOutline } from "react-ico
 //Images
 import aboutIMG  from './Assets/aboutIMG.png'
 import devIMG  from './Assets/devIMG.png'
-import aDevImg  from './Assets/aDevImg.png'
-import aDesignImg  from './Assets/aDesignImg.png'
-import aCommImg  from './Assets/aCommImg.png'
+import aDevImg  from './Assets/adev.svg'
+import aDesignImg  from './Assets/aDesigner.svg'
+import aCommImg  from './Assets/acomm.svg'
 
 
 export default function About() {
@@ -60,19 +60,13 @@ function Skills() {
     let [id , setId] = useState(0);
     let [id2 , setId2] = useState(1);
     let [id3 , setId3] = useState(2);
-    let [idIcon , setIdIcon] = useState(1);
-    let [icon , setIcon] = useState(<HiCodeBracket/>);
-    let [idIcon2 , setIdIcon2] = useState(1);
-    let [icon2 , setIcon2] = useState(<HiMiniPaintBrush/>);
-    let [idIcon3 , setIdIcon3] = useState(1);
-    let [icon3 , setIcon3] = useState(<HiRocketLaunch/>);
-
     let skills = [
         {
             id: 0,
             title: "Web Developer",
             phrase: `I know all the main features of actuality to make modern and functional websites that your company need`,
             IMG: aDevImg,
+            iconT: <HiCodeBracket/>,
             icon1: <SiReact/>,
             icon2: <SiTailwindcss/>,
             icon3: <SiJavascript/>,
@@ -83,6 +77,7 @@ function Skills() {
             title: "Web Designer",
             phrase: "I’m always studying new ways to make spectacular  website pages, with a lot of identity and design",
             IMG: aDesignImg,
+            iconT: <HiMiniPaintBrush/>,
             icon1: <BiHighlight/>,
             icon2: <BiPalette/>,
             icon3: <BiHeartCircle/>,
@@ -93,6 +88,7 @@ function Skills() {
             title: "Comunication",
             phrase: "My communication with clients its one of the most important steps of my work, so i’m clearly and a good listener",
             IMG: aCommImg,
+            iconT: <HiRocketLaunch/>,
             icon1: 'I speak two languages:',
             icon2: 'Portuguese',
             icon3: 'English',
@@ -105,84 +101,35 @@ function Skills() {
             IMG: ""
         }
     ]
-
     function setSkill() {
         setId(id + 1);
         if (id === 2){
             setId(0);
         }
-        setIdIcon(idIcon + 1);
-        if (idIcon === 2){
-            setIdIcon(0)
-        }
 
-        if (idIcon === 0){
-            setIcon(<HiCodeBracket/>);
-       
-           
-        } else if (idIcon === 1){
-            setIcon(<HiMiniPaintBrush/>);
-        } else if (idIcon === 2) {
-            setIcon(<HiRocketLaunch/>)
-        }
     }
-
     function setSkill2(){
         setId2(id2 + 1)
         if (id2 === 2){
             setId2(0);
-        }
-        setIdIcon2(idIcon2 + 1);
-        if (idIcon2 === 2){
-            setIdIcon2(0)
-        }
-
-        if (idIcon2 === 0){
-            setIcon2(<HiCodeBracket/>);
-       
-           
-        } else if (idIcon2 === 1){
-            setIcon2(<HiMiniPaintBrush/>);
-        } else if (idIcon2 === 2) {
-            setIcon2(<HiRocketLaunch/>)
-        }
-        
+        }      
     }
     function setSkill3(){
         if (id3 === 2){
             setId3(0);
         }
         setId3(id3 + 1)
-        
-        setIdIcon3(idIcon3 + 1);
-        if (idIcon3 === 2){
-            setIdIcon3(0)
-        }
-
-        if (idIcon3 === 0){
-            setIcon3(<HiCodeBracket/>);
-       
-           
-        } else if (idIcon3 === 1){
-            setIcon3(<HiMiniPaintBrush/>);
-        } else if (idIcon === 2) {
-            setIcon3(<HiRocketLaunch/>)
-        }
     }
     
-
-    
-        
-
     return(
         <div className="font-pFont">
-            <h1 className="text-center text-[50px] font-hFont mt-8">My skills</h1>
+            <h1 className="text-center text-[50px] font-hFont mt-3">My skills</h1>
             <div className="flex items-center justify-center">
                 <div className="flex items-center justify-center">
-                    <div className={`absolute z-50 bg-white w-[80vw] lg:w-[30vw] h-[563px] border-2 border-black rounded-[6px]`}>
+                    <div className={`relative lg:absolute z-50 bg-white w-[90vw] sm:w-[70vw] lg:w-[40vw] xl:w-[30vw] h-[563px] border-2 border-black rounded-[6px]`}>
                         <div className="flex items-center justify-center mt-6">
-                            <p className="text-[40px] mr-4">{icon}</p>
-                            <h1 className="text-[35px] font-hFont">{skills[id].title}</h1>
+                            <p className="text-[40px] mr-4">{skills[id].iconT}</p>
+                            <h1 className="text-3xl lg:text-[35px] font-hFont">{skills[id].title}</h1>
                         </div>
                         <ul className={`${id === 2 ? 'flex flex-col items-start justify-start' : 'flex items-center justify-center mt-8'}`}>      
                             <li className={`${id === 2 ? 'text-2xl ml-3 mt-2' : 'text-[50px] mx-3'}`}>{skills[id].icon1}</li>
@@ -191,16 +138,18 @@ function Skills() {
                             <li className={`${id === 2 ? 'text-2xl ml-5' : 'text-[50px] mx-3'}`}>{skills[id].icon4}</li>
                         </ul>
                         <div className="flex items-center justify-center">
-                            <p className={`text-center w-[95%] mt-8 ${id === 2 ? 'text-[23px]' : 'text-[27px]'}`}>{skills[id].phrase}</p>
+                            <p className={`text-center w-[95%] mt-8 ${id === 2 ? 'text-[25px] lg:text-[23px]' : 'text-[27px]'}`}>{skills[id].phrase}</p>
                         </div>
+                        <div className="flex items-end justify-center">
                         <div className="absolute bottom-0">
-                            <img src={skills[id].IMG} className={`${id === 1 ? 'w-[80vw] h-[180px]' : ''}`} />
+                            <img src={skills[id].IMG} className={`${id === 1 ? 'w-[330px]' : 'w-[420px]'}`} />
+                        </div>
                         </div>
                     </div>
 
-                    <div className={`relative mx-[100px] scale-75 z-10 w-[80vw] lg:w-[30vw] h-[563px] border-2 border-black rounded-[6px]`}>
+                    <div className={`hidden lg:block relative mx-[100px] scale-75 z-10 w-[80vw] lg:w-[40vw] xl:w-[30vw] h-[563px] border-2 border-black rounded-[6px]`}>
                         <div className="flex items-center justify-center mt-6">
-                            <p className="text-[40px] mr-4">{icon2}</p>
+                            <p className="text-[40px] mr-4">{skills[id2].iconT}</p>
                             <h1 className="text-[35px] font-hFont">{skills[id2].title}</h1>
                         </div>
                         <ul className={`${id2 === 2 ? 'flex flex-col items-start justify-start' : 'flex items-center justify-center mt-8'}`}>      
@@ -213,13 +162,13 @@ function Skills() {
                             <p className={`text-center w-[95%] mt-8 ${id2 === 2 ? 'text-[23px]' : 'text-[27px]'}`}>{skills[id2].phrase}</p>
                         </div>
                         <div className="absolute bottom-0">
-                            <img src={skills[id2].IMG} className={`${id2 === 1 ? 'w-[80vw] h-[180px]' : ''}`} />
+                            <img src={skills[id2].IMG} className={`${id2 === 1 ? 'w-[330px]' : 'w-[420px]'}`} />
                         </div>
                     </div>
 
-                    <div className={`hidden lg:block relative mx-[100px] scale-75 z-10 w-[80vw] lg:w-[30vw] h-[563px] border-2 border-black rounded-[6px]`}>
+                    <div className={`hidden lg:block relative mx-[100px] scale-75 z-10 w-[80vw] lg:w-[40vw] xl:w-[30vw] h-[563px] border-2 border-black rounded-[6px]`}>
                         <div className="flex items-center justify-center mt-6">
-                            <p className="text-[40px] mr-4">{icon3}</p>
+                            <p className="text-[40px] mr-4">{skills[id3].iconT}</p>
                             <h1 className="text-[35px] font-hFont">{skills[id3].title}</h1>
                         </div>
                         <ul className={`${id3 === 2 ? 'flex flex-col items-start justify-start' : 'flex items-center justify-center mt-8'}`}>      
@@ -232,18 +181,14 @@ function Skills() {
                             <p className={`text-center w-[95%] mt-8 ${id3 === 2 ? 'text-[23px]' : 'text-[27px]'}`}>{skills[id3].phrase}</p>
                         </div>
                         <div className="absolute bottom-0">
-                            <img src={skills[id3].IMG} className={`${id3 === 1 ? 'w-[80vw] h-[180px]' : ''}`} />
+                            <img src={skills[id3].IMG} className={`${id3 === 1 ? 'w-[330px]' : 'w-[420px]'}`} />
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="flex items-center justify-around mt-2">
+            <div className="flex items-center justify-around lg:mt-[-40px]">
                 <button className="text-[60px]" onClick={() => {setId(id - 1); setId2(id2 - 1); setId3(id3 - 1); if (id === 0){setId(2)};if (id2 === 0){setId2(2)}; if (id3 === 0){setId3(2)};}}><IoArrowBackCircleOutline/></button>
                 <button className="text-[60px]" onClick={() => {setSkill(); setSkill2(); setSkill3(); if(id3 === 2) {setId3(0)}}}><IoArrowForwardCircleOutline/></button>
-                {id2}
-                {id}
-                {id3}
-                    
             </div>
         </div>
     )

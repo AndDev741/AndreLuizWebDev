@@ -7,7 +7,7 @@ export default {
       ms: "768px",
       md: "850px",
       lg: "1000px",
-      xl: "1245px",
+      xl: "1200px",
       "2xl": "1536px",
     },
     prefix: "tw-",
