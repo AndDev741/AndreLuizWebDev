@@ -44,7 +44,7 @@ export default function MyProjects() {
             <div className='my-12'>
                 <div className="lg:flex items-center">
                     <div className="bg-black lg:w-[950px]">
-                        <h1 className="text-[60px] lg:text-[70px] font-hFont text-center text-white m-1">Projects <br className="block lg:hidden" /> that i made</h1>
+                        <h1 className="text-[45px] lg:text-[70px] font-hFont text-center text-white m-1">Projects <br className="block lg:hidden" /> that i made</h1>
                     </div>
                     <img src={projectsIMG} alt='desktop icon' className="hidden lg:block ml-[100px]" />
                 </div>

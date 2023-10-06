@@ -24,7 +24,7 @@ export default function About() {
                         <img src={devIMG} />
                     </div>
                     <div className="flex items-center lg:justify-start justify-center bg-black lg:w-[930px]">
-                        <h1 className="text-white text-[70px] lg:ml-8 font-hFont m-1">About Me</h1>
+                        <h1 className="text-white text-[45px] lg:ml-8 font-hFont m-1">About Me</h1>
                     </div>
                 </div>
                 <div className="flex flex-col lg:flex-row-reverse items-center justify-center ">
@@ -126,7 +126,7 @@ function Skills() {
             <h1 className="text-center text-[50px] font-hFont mt-3">My skills</h1>
             <div className="flex items-center justify-center">
                 <div className="flex items-center justify-center">
-                    <div className={`relative lg:absolute z-50 bg-white w-[90vw] sm:w-[70vw] lg:w-[40vw] xl:w-[30vw] h-[563px] border-2 border-black rounded-[6px]`}>
+                    <div className={`relative lg:absolute z-50 bg-white w-[90vw] sm:w-[70vw] lg:w-[38vw] xl:w-[35vw] h-[563px] border-2 border-black rounded-[6px]`}>
                         <div className="flex items-center justify-center mt-6">
                             <p className="text-[40px] mr-4">{skills[id].iconT}</p>
                             <h1 className="text-3xl lg:text-[35px] font-hFont">{skills[id].title}</h1>
@@ -147,7 +147,7 @@ function Skills() {
                         </div>
                     </div>
 
-                    <div className={`hidden lg:block relative mx-[100px] scale-75 z-10 w-[80vw] lg:w-[40vw] xl:w-[30vw] h-[563px] border-2 border-black rounded-[6px]`}>
+                    <div className={`hidden lg:block relative mx-[100px] lg:mx-[50px] xl:mx-[100px] scale-75 z-10 w-[80vw] lg:w-[30vw] xl:w-[30vw] h-[563px] border-2 border-black rounded-[6px]`}>
                         <div className="flex items-center justify-center mt-6">
                             <p className="text-[40px] mr-4">{skills[id2].iconT}</p>
                             <h1 className="text-[35px] font-hFont">{skills[id2].title}</h1>
@@ -159,14 +159,14 @@ function Skills() {
                             <li className={`${id2 === 2 ? 'text-2xl ml-5' : 'text-[50px] mx-3'}`}>{skills[id2].icon4}</li>
                         </ul>
                         <div className="flex items-center justify-center">
-                            <p className={`text-center w-[95%] mt-8 ${id2 === 2 ? 'text-[23px]' : 'text-[27px]'}`}>{skills[id2].phrase}</p>
+                            <p className={`text-center w-[95%] mt-8 ${id2 === 2 ? 'text-[23px]' : 'text-[27px] lg:text-[23px]'}`}>{skills[id2].phrase}</p>
                         </div>
                         <div className="absolute bottom-0">
                             <img src={skills[id2].IMG} className={`${id2 === 1 ? 'w-[330px]' : 'w-[420px]'}`} />
                         </div>
                     </div>
 
-                    <div className={`hidden lg:block relative mx-[100px] scale-75 z-10 w-[80vw] lg:w-[40vw] xl:w-[30vw] h-[563px] border-2 border-black rounded-[6px]`}>
+                    <div className={`hidden lg:block relative mx-[100px] lg:mx-[50px] xl:mx-[100px] scale-75 z-10 w-[80vw] lg:w-[30vw] xl:w-[30vw] h-[563px] border-2 border-black rounded-[6px]`}>
                         <div className="flex items-center justify-center mt-6">
                             <p className="text-[40px] mr-4">{skills[id3].iconT}</p>
                             <h1 className="text-[35px] font-hFont">{skills[id3].title}</h1>
@@ -178,10 +178,10 @@ function Skills() {
                             <li className={`${id3 === 2 ? 'text-2xl ml-5' : 'text-[50px] mx-3'}`}>{skills[id3].icon4}</li>
                         </ul>
                         <div className="flex items-center justify-center">
-                            <p className={`text-center w-[95%] mt-8 ${id3 === 2 ? 'text-[23px]' : 'text-[27px]'}`}>{skills[id3].phrase}</p>
+                            <p className={`text-center w-[95%] mt-8 ${id3 === 2 ? 'text-[23px]' : 'text-[27px] lg:text-[23px]'}`}>{skills[id3].phrase}</p>
                         </div>
                         <div className="absolute bottom-0">
-                            <img src={skills[id3].IMG} className={`${id3 === 1 ? 'w-[330px]' : 'w-[420px]'}`} />
+                            <img src={skills[id3].IMG} className={`${id3 === 1 ? 'w-[350px]' : 'w-[420px]'}`} />
                         </div>
                     </div>
                 </div>

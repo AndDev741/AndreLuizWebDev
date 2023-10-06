@@ -1,4 +1,5 @@
 import About from "./About";
+import { Footer } from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import Contact from "./Contact";
 import Home from "./Home";
@@ -14,6 +15,7 @@ export default function Render() {
             <MyProjects/>
             <About/>
             <Contact/>
+            <Footer/>
         </div>
     )
 }
