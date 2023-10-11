@@ -103,19 +103,19 @@ function HowIMake() {
         <h1 className="text-[60px] md:text-[70px] text-center lg:text-left font-hFont lg:ml-8">How i make them</h1>
         <div className="flex flex-col lg:items-center md:flex-row lg:justify-center lg:mx-12">
             <div className="flex flex-col items-center">
-                <div className="flex flex-col items-center lg:items-start w-[98%] sm:w-[90%] md:w-[80%] lg:w-[580px] h-[100%] pb-3 lg:pb-0 lg:h-[280px] border-[2px] border-black rounded-[6px] mt-8">
+                <div className="flex flex-col items-center lg:items-start w-[98%] sm:w-[90%] md:w-[80%] lg:w-[580px] h-[100%] pb-3 lg:pb-0 lg:h-[280px] border-[2px] border-black rounded-[6px] mt-6 lg:mt-0 ">
                     <div className="flex items-center flex-wrap">
-                        <img src={siteIMG} />
-                        <h1 className="font-hFont text-[50px] 3xl ml-6">Websites</h1>
+                        <img src={siteIMG} className='w-[80px] sm:w-[90px]' />
+                        <h1 className="font-hFont text-[23px] sm:text-[26px] lg:text-[37px] lg:ml-3">Websites Development</h1>
                     </div>
-                    <p className="text-3xl text-center lg:text-start mt-4 lg:ml-2">I use <strong>React JS</strong>  to make all the websites from zero, making every one with a lot of <strong>personality</strong> and amazing <strong>functionalities</strong></p>
+                    <p className="text-3xl text-center lg:text-start mt-4 lg:m-4">I use <strong>React JS</strong>  to make all the websites from zero, creating custom websites with <strong>personality</strong> and unique <strong>functionalities</strong></p>
                 </div>
                 <div className="flex flex-col items-center  lg:items-start w-[98%] sm:w-[90%] md:w-[80%] lg:w-[580px] h-[100%] pb-3 lg:pb-0 lg:h-[280px] border-[2px] border-black rounded-[6px] mt-8">
                     <div className="flex items-center flex-wrap sm:ml-3">
-                        <img src={designIMG} />
-                        <h1 className="font-hFont text-[50px] 3xl ml-12 lg:ml-8">Design</h1>
+                        <img src={designIMG} className='w-[80px] sm:w-[90px]' />
+                        <h1 className="font-hFont text-[26px] sm:text-[28px]  lg:text-[37px] ml-2 lg:ml-6">Web Design Process</h1>
                     </div>
-                    <p className="text-3xl text-center lg:text-start mt-4 lg:ml-2"><strong>Figma</strong>  its the software that i choose to make all this beautiful websites design, with a lot of <strong>UI</strong> and <strong>UX</strong> strategies</p>
+                    <p className="text-3xl text-center lg:text-start mt-4 lg:m-4"><strong>Figma</strong>  its the software that i choose to make all this beautiful websites design, with a lot of <strong>UI</strong> and <strong>UX</strong> strategies</p>
                 </div>
             </div>
             <div className='flex items-center justify-center'>

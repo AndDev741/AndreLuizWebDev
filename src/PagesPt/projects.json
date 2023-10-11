@@ -1,0 +1,43 @@
+{
+    "projects": [
+        {
+            "id": 0,
+            "title": "MindBlowing Mornings",
+            "phrase": "This project reflects my dedication to crafting visually captivating and user-centric digital platforms. The website's captivating design and interactive features are tailored to elevate the morning routines of users, promoting positivity and mindfulness. Through this project, I demonstrated my commitment to creating digital experiences that inspire and energize individuals as they start their day.",
+            "pcGIF": "mindBlowingGIF.e9052efb1069255c6d63.webm",
+            "mbIMG": "mindBlowingIMG.b4965f27adc55246512c.png",
+            "pageLink": "https://mindblowingmornings.com/",
+            "githubLink": "https://github.com/AndDev741/Mind-Blowing-Morning/",
+            "privacy": true
+        },
+        {
+            "id": 1,
+            "title": "Gardening Your Relationships",
+            "phrase": "This project embodies my passion for creating meaningful online experiences. With a harmonious blend of aesthetics and functionality, the website fosters a nurturing digital environment for cultivating healthy relationships. Its intuitive design and engaging features exemplify my commitment to crafting digital solutions that inspire connection and personal growth.",
+            "pcGIF": "GYRGIF.8f7b338dbd9a9658d7b7.webm",
+            "mbIMG": "GYRIMG.78729babf8af176c651b.png",
+            "pageLink": "https://gardeningyourrelationships.com/",
+            "githubLink": "https://github.com/AndDev741/GYR",
+            "privacy": true
+        },
+        {
+            "id": 2,
+            "title": "JM Serviços",
+            "phrase": "JM Serviços, a leading company specializing in electrical services. The site embodies a modern design, ensuring a user-friendly experience across all devices. It reflects the professionalism of JM Serviços while facilitating seamless navigation for visitors. Crafting this website was a testament to my commitment to delivering functional and visually appealing digital solutions.",
+            "pcGIF": "jmServiçosGIF.d44a76f750ca1f282e47.webm",
+            "mbIMG": "jmServiçosIMG.d7800ead70ca2a0819ac.png",
+            "pageLink": "https://jmservicosgoiania.com.br/",
+            "githubLink": "https://github.com/AndDev741/JMServicos",
+            "privacy": false
+        },
+        {
+            "id": 3,
+            "title": "",
+            "phrase": "",
+            "mbIMG": "",
+            "pageLink": "",
+            "githubLink": "",
+            "privacy": false
+        }
+    ]
+}

@@ -1,4 +1,6 @@
 import { Element } from "react-scroll"
+import emailjs from '@emailjs/browser';
+import { useState } from "react";
 //icons
 import { FaEnvelope, FaWhatsappSquare, FaLinkedin, FaGithub } from 'react-icons/fa'
 //images
@@ -26,16 +28,16 @@ export default function Contact() {
                                 </div>
                                 <div className="flex flex-col items-center">
                                     <FaEnvelope className="text-[50px] mt-3"/>
-                                    <p className="text-3xl mt-2 ">anddesenvolved@gmail.com</p>
+                                    <p className="text-xl sm:text-2xl mt-2 ">andreluizdigitalsolutions@gmail.com</p>
                                 </div>
                                 <h2 className="text-[35px] mt-5">Find me on Internet</h2>
                                 <div className="flex items-center justify-around mt-3 mb-[60px]">
-                                    <FaLinkedin className="text-[60px] mx-10"/>
-                                    <FaGithub className="text-[60px] mx-10"/>
+                                    <a href="https://www.linkedin.com/in/andr%C3%A9-luiz-dev-b9915b275/?locale=en_US" target={"_blank"}><FaLinkedin className="text-[60px] mx-10"/></a>
+                                    <a href="https://github.com/AndDev741" target={"_blank"}><FaGithub className="text-[60px] mx-10"/></a>
                                 </div>
                             </div>
                         </div>
-                        <img src={contactIMG} className='hidden lg:block mt-[45px]' />
+                        <img src={contactIMG} className='hidden lg:block mt-[100px]' />
                     </div>
                     <div>
                         <Form />
@@ -47,34 +49,49 @@ export default function Contact() {
 }
 
 function Form() {
+        let [message, letMessage] = useState('')
+        const sendEmail = (e) => {
+          e.preventDefault();
+      
+          emailjs.sendForm('service_5a2zisj', 'template_u81irwr', e.target, 'wBGfTr7_R-MzX399d')
+            .then((result) => {
+                letMessage('Message sent successfully!');
+            }, (error) => {
+                letMessage('Error sending email, try another contact method!');
+            });
+            e.target.reset();
+        }
+
+
     return(
         <div className="">
             <h1 className="text-[40px] font-hFont text-center lg:hidden mt-4 ">Send me an Email</h1>
-            <form className="text-3xl font-bold mt-7 m-1 lg:flex flex-col lg:mt-12">
+            <form onSubmit={sendEmail} className="text-3xl font-bold mt-7 m-1 lg:flex flex-col lg:mt-12">
                 <label htmlFor='name'>Name</label>
-                <input id='name' type={'text'} className='text-2xl border-b-2 border-black border-0 w-[100%] xl:w-[600px]  focus:border-black focus:ring-0 focus:outline-black mb-5 xl:mr-[100px]' />
+                <input id='name' name="name" type={'text'} className='text-2xl border-b-2 border-black border-0 w-[100%] xl:w-[600px]  focus:border-black focus:ring-0 focus:outline-black mb-5 xl:mr-[100px]' />
                 <label htmlFor='email'>Email</label>
-                <input id='email' type={'email'} className='text-2xl border-b-2 border-black border-0 w-[100%] xl:w-[600px] focus:border-black focus:ring-0 focus:outline-black mb-5 xl:mr-[100px]' />
+                <input id='email' name="email" type={'email'} className='text-2xl border-b-2 border-black border-0 w-[100%] xl:w-[600px] focus:border-black focus:ring-0 focus:outline-black mb-5 xl:mr-[100px]' />
                 <label htmlFor="phone">Phone</label>
-                <input type={'text'} id='phone' className='text-2xl border-b-2 border-black border-0 w-[100%] xl:w-[600px] focus:border-black focus:ring-0 focus:outline-black  mb-5 xl:mr-[100px]' />
+                <input type={'text'} id='phone' name="number" className='text-2xl border-b-2 border-black border-0 w-[100%] xl:w-[600px] focus:border-black focus:ring-0 focus:outline-black  mb-5 xl:mr-[100px]' />
                 <div className="flex flex-col items-start justify-center mb-4">
                     <label className="text-center">What work you need?</label>
                     <div className="flex flex-col lg:flex-row mt-4">
                         <div className="flex flex-col justify-center ">
-                            <label className="lg:text-2xl"><input type={'checkbox'} className='text-black cursor-pointer focus:outline-white w-8 h-8 lg:mr-1 text-ce xl:mr-4 mb-4' />Web development</label>
-                            <label className="lg:text-2xl"><input type={'checkbox'} className='text-black cursor-pointer focus:outline-white w-8 h-8 lg:mr-1 text-ce xl:mr-4 mb-4' />Web design</label>
+                            <label className="lg:text-2xl"><input type={'checkbox'} name='webdevelopment' value='Web development' className='text-black cursor-pointer focus:outline-white w-8 h-8 lg:mr-1 text-ce xl:mr-4 mb-4' />Web development</label>
+                            <label className="lg:text-2xl"><input type={'checkbox'} name='design' className='text-black cursor-pointer focus:outline-white w-8 h-8 lg:mr-1 text-ce xl:mr-4 mb-4' />Web design</label>
                         </div>
                         <div className="flex flex-col lg:flex-col lg:ml-7 ">
-                             <label className="lg:text-2xl"><input type={'checkbox'} className='text-black cursor-pointer focus:outline-white w-8 h-8 mr-1 text-ce xl:mr-4 mb-4' />SEO Strategies</label>
-                            <label className="lg:text-2xl"><input type={'checkbox'} className='text-black cursor-pointer focus:outline-white w-8 h-8 mr-1 text-ce xl:mr-4 mb-4' />Other digital solutions</label>
+                             <label className="lg:text-2xl"><input type={'checkbox'} name='seo' className='text-black cursor-pointer focus:outline-white w-8 h-8 mr-1 text-ce xl:mr-4 mb-4' />SEO Strategies</label>
+                            <label className="lg:text-2xl"><input type={'checkbox'} name='other' className='text-black cursor-pointer focus:outline-white w-8 h-8 mr-1 text-ce xl:mr-4 mb-4' />Other digital solutions</label>
                         </div>
                             
                     </div>
                 </div>
                 <label className="mt-2" >Message</label>
-                <textarea className="text-2xl w-[100%] xl:w-[600px] h-[200px] border-black focus:border-2 focus:border-black focus:ring-0 focus:outline- xl:mr:[100px]"/>
-                <div className="flex items-center justify-center mt-5">
+                <textarea name="message" className="text-2xl w-[100%] xl:w-[600px] h-[200px] border-black focus:border-2 focus:border-black focus:ring-0 focus:outline- xl:mr:[100px]"/>
+                <div className="flex flex-col items-center justify-center mt-5">
                     <input type={'submit'} value='Send Email' className="bg-black cursor-pointer hover:scale-95 text-white p-3 w-[300px] rounded-[12px]" />
+                    <p className="mt-3 underline">{message}</p>
                 </div>
             </form>
             <img src={contactIMG} className='block lg:hidden mt-12 ' />

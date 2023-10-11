@@ -3,7 +3,7 @@ import { Link as Linkar } from "react-scroll";
 import { useState } from "react";
 //images
 import logoMB from '../Assets/logoAndMB.png'
-import logoPC from '../Assets/logoAndPC.png'
+import logo from '../Assets/Logo EN.png'
 import menuMB from '../Assets/menuMB.png'
 import lnkdLogo from '../Assets/lnkdLogo.png'
 import gthbLogo from '../Assets/gthbLogo.png'
@@ -20,10 +20,10 @@ export default function Navbar() {
     return(
         <>
         <nav>
-         <div className={`flex justify-evenly mt-2`}>
-            <div>
-                <img src={logoMB} alt='logo' className="block lg:hidden" />
-                <img src={logoPC} alt='logo' className="hidden lg:block w-[200px] mr-12 " />
+         <div className={`flex items-center justify-evenly lg:justify-evenly mt-2`}>
+            <div className="hidden lg:flex m-1 flex-col items-center justify-center">
+                <h1 className="text-xl md:ml-12 font-hFont">André Luiz</h1>
+                <h1 className="text-xl md:ml-12 font-hFont">Digital Solutions</h1>
             </div>
             <div className="hidden md:flex items-center text-[18px] font-pFont ml-12 ">
                 <button><Linkar to="home" smooth className="mx-5 hover:underline cursor-pointer">Home</Linkar></button>
@@ -35,12 +35,12 @@ export default function Navbar() {
             <div className="flex items-center justify-center md:ml-8">
                 <Link to='/en' className={`flex items-center justify-center
                 w-[48px] h-[26px] border-[1px] border-black rounded-l-[24px]
-                ${location.pathname === '/pt' ? 'bg-black text-white' : ''}`}>
+                ${location.pathname === '/en' ? 'bg-black text-white' : ''}`}>
                     <b><p>EN</p></b>
                 </Link>
-                <Link to='/pt' className={`flex items-center justify-center
+                <Link to='/' className={`flex items-center justify-center
                 w-[48px] h-[26px] border-[1px] border-black rounded-r-[24px]
-                ${location.pathname === '/en' ? 'bg-black text-white' : ''}`}>
+                ${location.pathname === '/' ? 'bg-black text-white' : ''}`}>
                     <b><p>PT</p></b>
                 </Link>
             </div>
@@ -60,6 +60,10 @@ export default function Navbar() {
                 fixed top-0 z-50 w-[100%] h-[100vh] bg-white overflow-hidden
                 flex justify-center`}>
                 <ul className="relative flex flex-col items-center justify-evenly font-pFont mt-3 text-center">
+                    <div className="flex flex-col items-center justify-center">
+                        <h1 className="text-2xl md:ml-12 font-hFont">André Luiz</h1>
+                        <h1 className="text-2xl md:ml-12 font-hFont">Digital Solutions</h1>
+                    </div>
                     <h2 className="font-hFont text-3xl sm:text-[64px]">Navigation</h2>
                     <button className="flex items-center">
                         <FaRegWindowRestore className="sm:text-[40px]"/>

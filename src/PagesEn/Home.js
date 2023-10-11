@@ -4,15 +4,18 @@ import whatsBlackIcon from './Assets/blackWhats.png'
 import homeImage from './Assets/homeImage.png'
 export default function Home() {
 
-
     return(
         <Element name="home">
             <div className="flex flex-col lg:flex-row items-center lg:justify-around justify-center font-pFont">
-                <div className="flex flex-col items-center lg:items-start justify-center mt-12 font-pFont lg:mx-12">
+                <div className="flex flex-col items-center lg:items-start justify-center mt-5 font-pFont lg:mx-12">
+                    <div className="flex lg:hidden flex-col items-center justify-center">
+                        <h1 className="text-xl md:ml-12 font-hFont">André Luiz</h1>
+                        <h1 className="text-xl md:ml-12 font-hFont">Digital Solutions</h1>
+                    </div>
                     <h1 className="font-hFont text-[54px] sm:text-[70px] text-center lg:text-left">
-                        I create <br/> your image <br/> on <u>internet</u><span className="animate-pulse">|</span></h1>
+                        Crafting <br/> your image <br/> on <u>internet</u><span className="animate-pulse">|</span></h1>
                     <p className="text-[36px] lg:text-[34px] text-center lg:text-left mt-5 lg:mt-0 lg:w-[480px]">
-                        I made everything that you <u>need</u>, since the <b>design, engineering, SEO tactics</b>  and more </p>
+                        I provide everything you <u>need</u>, from <b>design and engineering to SEO tactics</b> and more </p>
                     <button className="flex items-center bg-black w-[257px] h-[63px] rounded-[24px] mt-5 lg>mt-2
                             hover:scale-95">
                         <img src={whatsBlackIcon} alt='whatsapp icon' className='ml-[20px]'/>

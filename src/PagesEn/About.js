@@ -138,7 +138,7 @@ function Skills() {
                             <li className={`${id === 2 ? 'text-2xl ml-5' : 'text-[50px] mx-3'}`}>{skills[id].icon4}</li>
                         </ul>
                         <div className="flex items-center justify-center">
-                            <p className={`text-center w-[95%] mt-8 ${id === 2 ? 'text-[25px] lg:text-[23px]' : 'text-[27px]'}`}>{skills[id].phrase}</p>
+                            <p className={`text-center w-[95%] mt-8 ${id === 2 ? 'text-[25px] lg:text-[23px]' : 'text-[26px] sm:text-[27px]'}`}>{skills[id].phrase}</p>
                         </div>
                         <div className="flex items-end justify-center">
                         <div className="absolute bottom-0">
