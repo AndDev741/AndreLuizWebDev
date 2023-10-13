@@ -45,7 +45,7 @@ export default function Navbar() {
                 </Link>
             </div>
             <div className="hidden xl:flex items-center ml-12">
-                <a href="https://www.linkedin.com/in/andr%C3%A9-luiz-dev-b9915b275/?locale=en_US" target={"_blank"} rel='noreferrer'> 
+                <a href="https://www.linkedin.com/in/andr%C3%A9-luiz-dev-b9915b275/" target={"_blank"} rel='noreferrer'> 
                     <img src={lnkdLogo} alt='Linkedin logo' className="ml-3 hover:scale-95"/></a>
                 <a href="https://github.com/AndDev741" target={"_blank"} rel='noreferrer'>
                     <img src={gthbLogo} alt='Github logo' className="ml-3 hover:scale-95"/></a>
@@ -62,26 +62,26 @@ export default function Navbar() {
                 <ul className="relative flex flex-col items-center justify-evenly font-pFont mt-3 text-center">
                     <div className="flex flex-col items-center justify-center">
                         <h1 className="text-2xl md:ml-12 font-hFont">André Luiz</h1>
-                        <h1 className="text-2xl md:ml-12 font-hFont">Digital Solutions</h1>
+                        <h1 className="text-2xl md:ml-12 font-hFont">Soluções Digitais</h1>
                     </div>
-                    <h2 className="font-hFont text-3xl sm:text-[64px]">Navigation</h2>
+                    <h2 className="font-hFont text-3xl">Menu deNavegação</h2>
                     <button className="flex items-center">
-                        <FaRegWindowRestore className="sm:text-[40px]"/>
-                        <Linkar to="services" className="ml-2 text-3xl sm:text-[60px]" smooth={true} onClick={handleMenu}>
-                        Services</Linkar></button>
+                        <FaRegWindowRestore className="sm:text-[30px]"/>
+                        <Linkar to="services" className="ml-2 text-3xl" smooth={true} onClick={handleMenu}>
+                        Serviços</Linkar></button>
                     <button className="flex items-center">
-                        <FaRegImages className="sm:text-[40px]"/>
-                        <Linkar to="myprojects" className="ml-2 text-3xl sm:text-[60px]"  smooth={true} onClick={handleMenu}>
-                        My projects</Linkar></button>
+                        <FaRegImages className="sm:text-[30px]"/>
+                        <Linkar to="myprojects" className="ml-2 text-3xl"  smooth={true} onClick={handleMenu}>
+                        Meus Projetos</Linkar></button>
                     <button className="flex items-center">
-                        <FaRegUser className="sm:text-[40px]"/>
-                        <Linkar to="about" className="ml-2 text-3xl sm:text-[60px]"  smooth={true} onClick={handleMenu}>
-                        About me</Linkar></button>
+                        <FaRegUser className="sm:text-[30px]"/>
+                        <Linkar to="about" className="ml-2 text-3xl"  smooth={true} onClick={handleMenu}>
+                        Sobre Mim</Linkar></button>
                     <button className="flex items-center">
-                        <FaRegEnvelope className="sm:text-[40px]"/>
-                        <Linkar to="contact" className="ml-2 text-3xl sm:text-[60px]"  smooth={true} onClick={handleMenu}>
-                        Contact me</Linkar></button>
-                    <button onClick={handleMenu} className='my-8 text-3xl sm:text-[60px] border-2 border-black rounded sm:p-5 p-2'>Exit Menu</button>
+                        <FaRegEnvelope className="sm:text-[30px]"/>
+                        <Linkar to="contact" className="ml-2 text-3xl"  smooth={true} onClick={handleMenu}>
+                        Contato</Linkar></button>
+                    <button onClick={handleMenu} className='my-8 text-3xl sm:text-[40px] border-2 border-black rounded sm:p-5 p-2'>Sair do Menu</button>
                 </ul>
             </div>
         </nav>      
