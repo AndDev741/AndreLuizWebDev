@@ -1,4 +1,5 @@
 import { Element } from "react-scroll"
+import { BiLogoWhatsapp } from "react-icons/bi";
 //images
 import foguete from './Assets/foguete.png'
 import websiteIMG from './Assets/websiteIMG.png'
@@ -35,7 +36,7 @@ function ServicesResume(){
                     Melhorando sua <b>presença digital</b> com estratégias efetivas, <u>Aumentando seus</u> <b>clientes</b> e <b>vendas</b>!</p>
                 <a href="https://wa.me//5562983264291?text=Olá%20Boa%20Tarde,%20gostaria%20de%20conversar%20sobre%20uma%20solução%20digital%20para%20minha%20empresa." target={"_blank"}><button className=" items-center bg-white w-[320px] h-[63px] rounded-[24px] my-6 xl>mt-2
                     hover:scale-95 hidden xl:flex xl:mt-8">
-                    <img src={whatsWhiteIMG} alt='whatsapp icon' className='ml-[20px]'/>
+                    <BiLogoWhatsapp className="text-black text-[60px] ml-3"/>
                     <h2 className="text-black text-[24px] font-[800] ml-3"><b>Contratar Serviços</b></h2>
                 </button></a>
             </div>
@@ -66,9 +67,9 @@ function ServicesResume(){
                     </div>
                 </div>
             </div>
-            <a href="https://wa.me//5562983264291?text=Olá%20Boa%20Tarde,%20gostaria%20de%20conversar%20sobre%20uma%20solução%20digital%20para%20minha%20empresa." target={"_blank"}><button className="flex items-center bg-white w-[310px] h-[63px] rounded-[24px] my-6 xl>mt-2
+            <a href="https://wa.me//5562983264291?text=Olá%20Boa%20Tarde,%20gostaria%20de%20conversar%20sobre%20uma%20solução%20digital%20para%20minha%20empresa." target={"_blank"}><button className="flex items-center bg-black w-[310px] h-[63px] rounded-[24px] my-6 xl>mt-2
                     hover:scale-95 xl:hidden xl:mt-8">
-                    <img src={whatsWhiteIMG} alt='whatsapp icon' className='ml-[20px]'/>
+                    <BiLogoWhatsapp className="text-black text-[60px] ml-3"/>
                     <h2 className="text-black text-[24px] font-[800] ml-3"><b>Contratar serviços</b></h2>
             </button></a>
         </div>
@@ -95,7 +96,7 @@ function WhyServices() {
                 </div>
                 <a href="https://wa.me//5562983264291?text=Olá%20Boa%20Tarde,%20gostaria%20de%20conversar%20sobre%20uma%20solução%20digital%20para%20minha%20empresa." target={"_blank"}><button className="flex items-center bg-black w-[257px] h-[63px] rounded-[24px] mt-10 sm:mt-5 lg>mt-2
                             hover:scale-95">
-                        <img src={whatsBlackIcon} alt='whatsapp icon' className='ml-[20px]'/>
+                        <BiLogoWhatsapp className="text-white text-[60px] ml-3"/>
                         <h2 className="text-white text-[24px] font-[800] ml-3">Saiba mais</h2>
                 </button></a>
             </div>

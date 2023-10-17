@@ -1,4 +1,5 @@
 import { Element } from "react-scroll"
+import { BiLogoWhatsapp } from "react-icons/bi";
 //images
 import whatsBlackIcon from './Assets/blackWhats.png'
 import homeImage from './Assets/homeImage.png'
@@ -18,7 +19,7 @@ export default function Home() {
                         Eu ofereço tudo que você <u>precisa</u>, desde o <b>design, desenvolvimento e taticas de SEO</b> e muito mais </p>
                     <a href="https://wa.me//5562983264291?text=Olá%20Boa%20Tarde,%20gostaria%20de%20conversar%20sobre%20uma%20solução%20digital%20para%20minha%20empresa." target={"_blank"}><button className="flex items-center bg-black w-[257px] h-[63px] rounded-[24px] mt-5 lg>mt-2
                             hover:scale-95">
-                        <img src={whatsBlackIcon} alt='whatsapp icon' className='ml-[20px]'/>
+                        <BiLogoWhatsapp className="text-white text-[60px] ml-3"/>
                         <h2 className="text-white text-[24px] font-[800] ml-3">Fale comigo</h2>
                     </button></a>
                 </div>
