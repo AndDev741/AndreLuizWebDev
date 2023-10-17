@@ -55,9 +55,9 @@ function Form() {
       
           emailjs.sendForm('service_5a2zisj', 'template_u81irwr', e.target, 'wBGfTr7_R-MzX399d')
             .then((result) => {
-                letMessage('Message sent successfully!');
+                letMessage('Email enviada com sucesso!');
             }, (error) => {
-                letMessage('Error sending email, try another contact method!');
+                letMessage('Erro ao enviar o email, tente outro meio de contato!');
             });
             e.target.reset();
         }
@@ -68,11 +68,11 @@ function Form() {
             <h1 className="text-[40px] font-hFont text-center lg:hidden mt-4 ">Me envie um email</h1>
             <form onSubmit={sendEmail} className="text-3xl font-bold mt-7 m-1 lg:flex flex-col lg:mt-12">
                 <label htmlFor='name'>Nome</label>
-                <input id='name' name="name" type={'text'} className='text-2xl border-b-2 border-black border-0 w-[100%] xl:w-[600px]  focus:border-black focus:ring-0 focus:outline-black mb-5 xl:mr-[100px]' />
+                <input id='name' required name="name" type={'text'} className='text-2xl border-b-2 border-black border-0 w-[100%] xl:w-[600px]  focus:border-black focus:ring-0 focus:outline-black mb-5 xl:mr-[100px]' />
                 <label htmlFor='email'>Email</label>
-                <input id='email' name="email" type={'email'} className='text-2xl border-b-2 border-black border-0 w-[100%] xl:w-[600px] focus:border-black focus:ring-0 focus:outline-black mb-5 xl:mr-[100px]' />
+                <input id='email' required name="email" type={'email'} className='text-2xl border-b-2 border-black border-0 w-[100%] xl:w-[600px] focus:border-black focus:ring-0 focus:outline-black mb-5 xl:mr-[100px]' />
                 <label htmlFor="phone">Telefone</label>
-                <input type={'text'} id='phone' name="number" className='text-2xl border-b-2 border-black border-0 w-[100%] xl:w-[600px] focus:border-black focus:ring-0 focus:outline-black  mb-5 xl:mr-[100px]' />
+                <input type={'text'} required id='phone' name="number" className='text-2xl border-b-2 border-black border-0 w-[100%] xl:w-[600px] focus:border-black focus:ring-0 focus:outline-black  mb-5 xl:mr-[100px]' />
                 <div className="flex flex-col items-start justify-center mb-4">
                     <label className="text-center">Que tipo de trabalho você precisa?</label>
                     <div className="flex flex-col lg:flex-row mt-4">
@@ -88,7 +88,7 @@ function Form() {
                     </div>
                 </div>
                 <label className="mt-2" >Mensagem</label>
-                <textarea name="message" className="text-2xl w-[100%] xl:w-[600px] h-[200px] border-black focus:border-2 focus:border-black focus:ring-0 focus:outline- xl:mr:[100px]"/>
+                <textarea name="message" required className="text-2xl w-[100%] xl:w-[600px] h-[200px] border-black focus:border-2 focus:border-black focus:ring-0 focus:outline- xl:mr:[100px]"/>
                 <div className="flex flex-col items-center justify-center mt-5">
                     <input type={'submit'} value='Enviar email' className="bg-black cursor-pointer hover:scale-95 text-white p-3 w-[300px] rounded-[12px]" />
                     <p className="mt-3 underline">{message}</p>

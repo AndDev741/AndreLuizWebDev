@@ -1,4 +1,5 @@
 import { Element } from "react-scroll"
+import { BiLogoWhatsapp } from "react-icons/bi";
 //images
 import foguete from './Assets/foguete.png'
 import websiteIMG from './Assets/websiteIMG.png'
@@ -33,11 +34,11 @@ function ServicesResume(){
                     Services <br /> that i gonna <br /> build for you</h2>
                 <p className="text-center xl:text-left text-[28px] xl:text-[35px] xl:w-[550px] xl:mt-3">
                     Boosting your <b>digital</b> presence with effective strategies, <u>growing</u> <b>clients</b> and <b>sales</b>!</p>
-                <button className=" items-center bg-white w-[257px] h-[63px] rounded-[24px] my-6 xl>mt-2
+                <a href={`https://wa.me//5562983264291?text=Hello,%20%20I%20would%20like%20to%20talk%20discuss%20a%20digital%20solution%20for%20my%20company`} target={"_blank"}><button className=" items-center bg-white w-[257px] h-[63px] rounded-[24px] my-6 xl>mt-2
                     hover:scale-95 hidden xl:flex xl:mt-8">
-                    <img src={whatsWhiteIMG} alt='whatsapp icon' className='ml-[20px]'/>
-                    <h2 className="text-black text-[24px] font-[800] ml-3"><b>Get Started</b></h2>
-                </button>
+                    <BiLogoWhatsapp className="text-black text-[60px] ml-3"/>
+                    <h2 className="text-black text-[24px] font-[800] ml-3"><b>Gets Started</b></h2>
+                </button></a>
             </div>
            
             <div className="flex flex-col md:flex-row items-center md:justify-around flex-wrap">
@@ -66,11 +67,11 @@ function ServicesResume(){
                     </div>
                 </div>
             </div>
-            <button className="flex items-center bg-white w-[257px] h-[63px] rounded-[24px] my-6 xl>mt-2
+            <a href={`https://wa.me//5562983264291?text=Hello,%20%20I%20would%20like%20to%20talk%20discuss%20a%20digital%20solution%20for%20my%20company`} target={"_blank"}><button className="flex items-center bg-white w-[257px] h-[63px] rounded-[24px] my-6 xl>mt-2
                     hover:scale-95 xl:hidden">
-                <img src={whatsWhiteIMG} alt='whatsapp icon' className='ml-[20px]'/>
-                <h2 className="text-black text-[24px] font-[800] ml-3"><b>Get Started</b></h2>
-            </button>
+                <BiLogoWhatsapp className="text-black text-[60px] ml-3"/>
+                <h2 className="text-black text-[24px] font-[800] ml-3"><b>Gets Started</b></h2>
+            </button></a>
         </div>
     </main>
     )
@@ -93,11 +94,10 @@ function WhyServices() {
                     <img src={identityIMG} alt='person' className='my-8 lg:w-[80px]' />
                     <p className="text-3xl lg:ml-8 text-center lg:text-start">Crafting Solutions with Your Identity</p>
                 </div>
-                <button className="flex items-center bg-black w-[257px] h-[63px] rounded-[24px] mt-10 sm:mt-5 lg>mt-2
-                            hover:scale-95">
-                        <img src={whatsBlackIcon} alt='whatsapp icon' className='ml-[20px]'/>
+                <a href={`https://wa.me//5562983264291?text=Hello,%20%20I%20would%20like%20to%20talk%20discuss%20a%20digital%20solution%20for%20my%20company`} target={"_blank"}><button className="flex items-center bg-black w-[257px] h-[63px] rounded-[24px] mt-10 sm:mt-5 lg:mt-2 hover:scale-95">
+                        <BiLogoWhatsapp className="text-white text-[60px] ml-5"/>
                         <h2 className="text-white text-[24px] font-[800] ml-3">Learn More</h2>
-                    </button>
+                </button></a>
             </div>
             <div className="flex items-center justify-center">
                 <img src={servicesIMG} alt="services icon" className='animate-smoothMoveMB sm:w-[60%] lg:w-[75%]' />

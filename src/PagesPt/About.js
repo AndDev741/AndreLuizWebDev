@@ -167,7 +167,7 @@ function Skills() {
                     </div>
 
                     <div className={`hidden lg:block relative mx-[100px] lg:mx-[50px] xl:mx-[100px] scale-75 z-10 w-[80vw] lg:w-[30vw] xl:w-[30vw] h-[563px] border-2 border-black rounded-[6px]`}>
-                        <div className="flex flex-col items-center justify-center mt-6">
+                        <div className="flex items-center justify-center mt-6">
                             <p className="text-[40px] mr-4">{skills[id3].iconT}</p>
                             <h1 className="text-[35px] font-hFont">{skills[id3].title}</h1>
                         </div>
@@ -178,7 +178,7 @@ function Skills() {
                             <li className={`${id3 === 2 ? 'text-2xl ml-5' : 'text-[50px] mx-3'}`}>{skills[id3].icon4}</li>
                         </ul>
                         <div className="flex items-center justify-center">
-                            <p className={`text-center w-[95%] mt-8 ${id3 === 2 ? 'text-[23px]' : 'text-[27px] lg:text-[23px]'}`}>{skills[id3].phrase}</p>
+                            <p className={`text-center w-[95%] mt-8 ${id3 === 2 ? 'text-[22px]' : 'text-[27px] lg:text-[23px]'}`}>{skills[id3].phrase}</p>
                         </div>
                         <div className="absolute bottom-0">
                             <img src={skills[id3].IMG} className={`${id3 === 1 ? 'w-[350px]' : 'w-[420px]'}`} />
