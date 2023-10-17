@@ -16,6 +16,12 @@ export default function Navbar() {
 
     function handleMenu() {
         setMenu(!menu)
+        
+    }
+    if(menu == false){
+        document.body.style.overflow = 'auto';
+    } else {
+        document.body.style.overflow = 'hidden';
     }
     return(
         <>

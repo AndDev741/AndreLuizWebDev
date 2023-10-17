@@ -24,30 +24,30 @@ export default function About() {
                         <img src={devIMG} />
                     </div>
                     <div className="flex items-center lg:justify-start justify-center bg-black lg:w-[930px]">
-                        <h1 className="text-white text-[45px] lg:ml-8 font-hFont m-1">About Me</h1>
+                        <h1 className="text-white text-[45px] lg:ml-8 font-hFont m-1">Sobre mim</h1>
                     </div>
                 </div>
                 <div className="flex flex-col lg:flex-row-reverse items-center justify-center ">
                     <div className="flex flex-col items-center lg:items-start justify-center mt-8 lg:mt-0 lg:w-[40%]">
                         <div className="flex flex-col lg:flex-row items-center justify-center my-6 lg:my-2">
                             <FaRegUserCircle className="text-[60px] text-black mb-2 lg:mr-4" />
-                            <p className="text-center text-3xl">My name is <strong>André Luiz</strong></p>
+                            <p className="text-center text-3xl">Meu nome é <strong>André Luiz</strong></p>
                         </div>
                         <div className="flex flex-col lg:flex-row  items-center justify-center my-6 lg:my-2">
                             <FaRegMap className="text-[60px] text-black mb-2 lg:mr-4" />
-                            <p className="text-center text-3xl">I'm from <strong>Brazil</strong></p>
+                            <p className="text-center text-3xl">Eu sou do <strong>Brasil</strong></p>
                         </div>
                         <div className="flex flex-col lg:flex-row  items-center justify-center my-6 lg:my-2">
                             <FaReact className="text-[60px] text-black mb-2 lg:mr-4" />
-                            <p className="text-center lg:text-start text-3xl lg:w-[100%]">I study <u>Analysis and systems development</u></p>
+                            <p className="text-center lg:text-start text-3xl lg:w-[100%]">Eu estudo <u>Análises e desenvolvimento de sistemas</u></p>
                         </div>
                         <div className="flex flex-col  items-center justify-center my-6 lg:my-2">
                             <SlTrophy className="text-[60px] text-black mb-2 " />
-                            <p className="text-center text-3xl lg:w-[80%]">My motivation its be a <strong>better professional</strong> every day, <u>helping people</u> with they <strong>image on internet</strong></p>
+                            <p className="text-center text-3xl lg:w-[80%]">Minha motivação é ser um <strong>melhor profissional</strong> a cada dia, <u>ajudando meus clientes</u> com sua <strong>imagem na internet</strong></p>
                         </div>
                     </div>
                     <div className="flex items-center justify-center lg:justify-end lg:w-1/2">
-                        <img src={aboutIMG} className="animate-smoothMoveMB lg:animate-smoothMove lg:mr-5 sm:w-[80%] md:w-[60%] lg:w-[90%]" />
+                        <img src={aboutIMG} className="animate-smoothMoveMB lg:animate-smoothMove lg:mr-5 sm:w-[80%] md:w-[60%] lg:w-[90%]" alt="Homem em um computador" />
                     </div>
                 </div>
                 <Skills />
@@ -63,8 +63,8 @@ function Skills() {
     let skills = [
         {
             id: 0,
-            title: "Web Developer",
-            phrase: `I know all the main features of actuality to make modern and functional websites that your company need`,
+            title: "Desenvolvedor Web",
+            phrase: `Eu conheço todas as principais ferramentas da atualidade para criar sites modernos e funcionais que sua empresa precisa.`,
             IMG: aDevImg,
             iconT: <HiCodeBracket/>,
             icon1: <SiReact/>,
@@ -75,7 +75,7 @@ function Skills() {
         {
             id: 1,
             title: "Web Designer",
-            phrase: "I’m always studying new ways to make spectacular  website pages, with a lot of identity and design",
+            phrase: "Estou sempre estudando novas maneiras de criar páginas de website espetaculares, com muita identidade e design.",
             IMG: aDesignImg,
             iconT: <HiMiniPaintBrush/>,
             icon1: <BiHighlight/>,
@@ -85,13 +85,13 @@ function Skills() {
         },
         {
             id: 2,
-            title: "Comunication",
-            phrase: "My communication with clients its one of the most important steps of my work, so i’m clearly and a good listener",
+            title: "Comunicação",
+            phrase: "Minha comunicação com os clientes é uma das etapas mais importantes do meu trabalho, por isso sou claro e um bom ouvinte.",
             IMG: aCommImg,
             iconT: <HiRocketLaunch/>,
-            icon1: 'I speak two languages:',
-            icon2: 'Portuguese',
-            icon3: 'English',
+            icon1: 'Eu falo duas linguas:',
+            icon2: 'Português',
+            icon3: 'Inglês',
             icon4: ''
         },
         {
@@ -123,11 +123,11 @@ function Skills() {
     
     return(
         <div className="font-pFont">
-            <h1 className="text-center text-[50px] font-hFont mt-3">My skills</h1>
+            <h1 className="text-center text-[50px] font-hFont mt-3">Minhas Habilidades</h1>
             <div className="flex items-center justify-center">
                 <div className="flex items-center justify-center">
-                    <div className={`relative lg:absolute z-50 bg-white w-[90vw] sm:w-[70vw] lg:w-[38vw] xl:w-[35vw] h-[563px] border-2 border-black rounded-[6px]`}>
-                        <div className="flex items-center justify-center mt-6">
+                    <div className={`relative lg:absolute z-50 bg-white w-[95vw] sm:w-[80vw] lg:w-[38vw] xl:w-[35vw] h-[600px] md:h-[563px] border-2 border-black rounded-[6px]`}>
+                        <div className="flex flex-col sm:flex-row items-center justify-center mt-6">
                             <p className="text-[40px] mr-4">{skills[id].iconT}</p>
                             <h1 className="text-3xl lg:text-[35px] font-hFont">{skills[id].title}</h1>
                         </div>
@@ -138,7 +138,7 @@ function Skills() {
                             <li className={`${id === 2 ? 'text-2xl ml-5' : 'text-[50px] mx-3'}`}>{skills[id].icon4}</li>
                         </ul>
                         <div className="flex items-center justify-center">
-                            <p className={`text-center w-[95%] mt-8 ${id === 2 ? 'text-[25px] lg:text-[23px]' : 'text-[26px] sm:text-[27px]'}`}>{skills[id].phrase}</p>
+                            <p className={`text-center w-[100%] md:w-[95%] mt-8 ${id === 2 ? 'text-[25px] lg:text-[23px]' : 'text-[24px] sm:text-[27px]'}`}>{skills[id].phrase}</p>
                         </div>
                         <div className="flex items-end justify-center">
                         <div className="absolute bottom-0">
@@ -167,7 +167,7 @@ function Skills() {
                     </div>
 
                     <div className={`hidden lg:block relative mx-[100px] lg:mx-[50px] xl:mx-[100px] scale-75 z-10 w-[80vw] lg:w-[30vw] xl:w-[30vw] h-[563px] border-2 border-black rounded-[6px]`}>
-                        <div className="flex items-center justify-center mt-6">
+                        <div className="flex flex-col items-center justify-center mt-6">
                             <p className="text-[40px] mr-4">{skills[id3].iconT}</p>
                             <h1 className="text-[35px] font-hFont">{skills[id3].title}</h1>
                         </div>

@@ -33,10 +33,10 @@ function ServicesResume(){
                     Serviços <br /> que eu vou <br /> criar pra você</h2>
                 <p className="text-center xl:text-left text-[28px] xl:text-[35px] xl:w-[550px] xl:mt-3">
                     Melhorando sua <b>presença digital</b> com estratégias efetivas, <u>Aumentando seus</u> <b>clientes</b> e <b>vendas</b>!</p>
-                <a href="https://wa.me//5562983264291?text=Olá%20Boa%20Tarde,%20gostaria%20de%20conversar%20sobre%20uma%20solução%20digital%20para%20minha%20empresa." target={"_blank"}><button className=" items-center bg-white w-[275px] h-[63px] rounded-[24px] my-6 xl>mt-2
+                <a href="https://wa.me//5562983264291?text=Olá%20Boa%20Tarde,%20gostaria%20de%20conversar%20sobre%20uma%20solução%20digital%20para%20minha%20empresa." target={"_blank"}><button className=" items-center bg-white w-[320px] h-[63px] rounded-[24px] my-6 xl>mt-2
                     hover:scale-95 hidden xl:flex xl:mt-8">
                     <img src={whatsWhiteIMG} alt='whatsapp icon' className='ml-[20px]'/>
-                    <h2 className="text-black text-[24px] font-[800] ml-3"><b>Quero Começar</b></h2>
+                    <h2 className="text-black text-[24px] font-[800] ml-3"><b>Contratar Serviços</b></h2>
                 </button></a>
             </div>
            
@@ -66,10 +66,10 @@ function ServicesResume(){
                     </div>
                 </div>
             </div>
-            <a href="https://wa.me//5562983264291?text=Olá%20Boa%20Tarde,%20gostaria%20de%20conversar%20sobre%20uma%20solução%20digital%20para%20minha%20empresa." target={"_blank"}><button className="flex items-center bg-white w-[275px] h-[63px] rounded-[24px] my-6 xl>mt-2
+            <a href="https://wa.me//5562983264291?text=Olá%20Boa%20Tarde,%20gostaria%20de%20conversar%20sobre%20uma%20solução%20digital%20para%20minha%20empresa." target={"_blank"}><button className="flex items-center bg-white w-[310px] h-[63px] rounded-[24px] my-6 xl>mt-2
                     hover:scale-95 xl:hidden xl:mt-8">
                     <img src={whatsWhiteIMG} alt='whatsapp icon' className='ml-[20px]'/>
-                    <h2 className="text-black text-[24px] font-[800] ml-3"><b>Quero Começar</b></h2>
+                    <h2 className="text-black text-[24px] font-[800] ml-3"><b>Contratar serviços</b></h2>
             </button></a>
         </div>
     </main>
@@ -80,7 +80,7 @@ function WhyServices() {
     return (
         <div className="flex flex-col lg:flex-row-reverse lg:justify-evenly mt-6">
             <div className="flex flex-col items-center lg:items-start font-pFont lg:mr-[100px]">
-                <h1 className="font-hFont text-[50px] lg:text-[65px] lg:text-left text-center mt-6">Por que Escolher <br /> Meus Serviços?</h1>
+                <h1 className="font-hFont text-3xl text-center  sm:text-[40px] lg:text-[55px] lg:leading-[65px] lg:text-left mt-6">Por que Escolher <br /> Meus Serviços?</h1>
                 <div className="flex flex-col lg:flex-row items-center">
                     <img src={growIMG} alt='rocket' className='my-8 lg:w-[80px]' />
                     <p className="text-3xl lg:ml-8 text-center lg:text-start">Grande crescimento empresarial</p>
@@ -91,7 +91,7 @@ function WhyServices() {
                 </div>
                 <div className="flex flex-col lg:flex-row items-center">
                     <img src={identityIMG} alt='person' className='my-8 lg:w-[80px]' />
-                    <p className="text-3xl lg:ml-8 text-center lg:text-start">Desenvolvendo aplicações com sua identidade</p>
+                    <p className="text-3xl lg:ml-8 text-center lg:text-start">Desenvolvo aplicações com sua identidade</p>
                 </div>
                 <a href="https://wa.me//5562983264291?text=Olá%20Boa%20Tarde,%20gostaria%20de%20conversar%20sobre%20uma%20solução%20digital%20para%20minha%20empresa." target={"_blank"}><button className="flex items-center bg-black w-[257px] h-[63px] rounded-[24px] mt-10 sm:mt-5 lg>mt-2
                             hover:scale-95">

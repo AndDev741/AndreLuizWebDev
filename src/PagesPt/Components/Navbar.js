@@ -13,10 +13,18 @@ import { FaRegUser, FaRegEnvelope, FaRegImages, FaRegWindowRestore } from 'react
 export default function Navbar() {
     const location = useLocation();
     let [menu, setMenu] = useState(false)
+    
 
     function handleMenu() {
         setMenu(!menu)
+        
     }
+    if(menu == false){
+        document.body.style.overflow = 'auto';
+    } else {
+        document.body.style.overflow = 'hidden';
+    }
+    console.log(menu)
     return(
         <>
         <nav>
@@ -64,7 +72,7 @@ export default function Navbar() {
                         <h1 className="text-2xl md:ml-12 font-hFont">André Luiz</h1>
                         <h1 className="text-2xl md:ml-12 font-hFont">Soluções Digitais</h1>
                     </div>
-                    <h2 className="font-hFont text-3xl">Menu deNavegação</h2>
+                    <h2 className="font-hFont text-3xl">Menu de Navegação</h2>
                     <button className="flex items-center">
                         <FaRegWindowRestore className="sm:text-[30px]"/>
                         <Linkar to="services" className="ml-2 text-3xl" smooth={true} onClick={handleMenu}>
