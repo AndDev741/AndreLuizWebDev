@@ -1,9 +1,6 @@
 import { Link, useLocation } from "react-router-dom"
 import { Link as Linkar } from "react-scroll";
 import { useState } from "react";
-//images
-import logoMB from '../Assets/logoAndMB.png'
-import logo from '../Assets/Logo EN.png'
 import menuMB from '../Assets/menuMB.png'
 import lnkdLogo from '../Assets/lnkdLogo.png'
 import gthbLogo from '../Assets/gthbLogo.png'
@@ -13,20 +10,16 @@ import { FaRegUser, FaRegEnvelope, FaRegImages, FaRegWindowRestore } from 'react
 export default function Navbar() {
     const location = useLocation();
     let [menu, setMenu] = useState(false)
-    
 
     function handleMenu() {
         setMenu(!menu)
-        
     }
-    if(menu == false){
+    if(menu === false){
         document.body.style.overflow = 'auto';
     } else {
         document.body.style.overflow = 'hidden';
     }
-    console.log(menu)
     return(
-        <>
         <nav>
          <div className={`flex items-center justify-evenly lg:justify-evenly mt-2`}>
             <div className="hidden lg:flex m-1 flex-col items-center justify-center">
@@ -93,6 +86,5 @@ export default function Navbar() {
                 </ul>
             </div>
         </nav>      
-        </>
     )
 }
