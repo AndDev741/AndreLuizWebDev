@@ -2,18 +2,15 @@ import { Element } from "react-scroll"
 import { useState } from "react"
 import { FaRegUserCircle, FaReact, FaRegMap } from 'react-icons/fa'
 import { SlTrophy } from 'react-icons/sl'
-//skill icons
 import { HiCodeBracket, HiMiniPaintBrush ,HiRocketLaunch} from 'react-icons/hi2' 
 import { SiReact, SiTailwindcss, SiJavascript, SiHtml5} from "react-icons/si";
 import { BiHighlight, BiPalette, BiHeartCircle, } from "react-icons/bi";
 import { IoArrowBackCircleOutline, IoArrowForwardCircleOutline } from "react-icons/io5";
-//Images
 import aboutIMG  from './Assets/aboutIMG.png'
 import devIMG  from './Assets/devIMG.png'
 import aDevImg  from './Assets/adev.svg'
 import aDesignImg  from './Assets/aDesigner.svg'
 import aCommImg  from './Assets/acomm.svg'
-
 
 export default function About() {
     return(
@@ -21,7 +18,7 @@ export default function About() {
             <div className="font-pFont">
                 <div className="lg:flex justify-end">
                     <div className="mr-12 hidden lg:block">
-                        <img src={devIMG} />
+                        <img src={devIMG} alt='man in a computer' />
                     </div>
                     <div className="flex items-center lg:justify-start justify-center bg-black lg:w-[930px]">
                         <h1 className="text-white text-[45px] lg:ml-8 font-hFont m-1">About Me</h1>
@@ -47,7 +44,7 @@ export default function About() {
                         </div>
                     </div>
                     <div className="flex items-center justify-center lg:justify-end lg:w-1/2">
-                        <img src={aboutIMG} className="animate-smoothMoveMB lg:animate-smoothMove lg:mr-5 sm:w-[80%] md:w-[60%] lg:w-[90%]" />
+                        <img src={aboutIMG} alt='Man using tech skills' className="animate-smoothMoveMB lg:animate-smoothMove lg:mr-5 sm:w-[80%] md:w-[60%] lg:w-[90%]" />
                     </div>
                 </div>
                 <Skills />
@@ -120,7 +117,6 @@ function Skills() {
         }
         setId3(id3 + 1)
     }
-    
     return(
         <div className="font-pFont">
             <h1 className="text-center text-[50px] font-hFont mt-3">My skills</h1>
@@ -142,11 +138,10 @@ function Skills() {
                         </div>
                         <div className="flex items-end justify-center">
                         <div className="absolute bottom-0">
-                            <img src={skills[id].IMG} className={`${id === 1 ? 'w-[330px]' : 'w-[420px]'}`} />
+                            <img src={skills[id].IMG} alt='cartoon character' className={`${id === 1 ? 'w-[330px]' : 'w-[420px]'}`} />
                         </div>
                         </div>
                     </div>
-
                     <div className={`hidden lg:block relative mx-[100px] lg:mx-[50px] xl:mx-[100px] scale-75 z-10 w-[80vw] lg:w-[30vw] xl:w-[30vw] h-[563px] border-2 border-black rounded-[6px]`}>
                         <div className="flex items-center justify-center mt-6">
                             <p className="text-[40px] mr-4">{skills[id2].iconT}</p>
@@ -162,10 +157,9 @@ function Skills() {
                             <p className={`text-center w-[95%] mt-8 ${id2 === 2 ? 'text-[23px]' : 'text-[27px] lg:text-[23px]'}`}>{skills[id2].phrase}</p>
                         </div>
                         <div className="absolute bottom-0">
-                            <img src={skills[id2].IMG} className={`${id2 === 1 ? 'w-[330px]' : 'w-[420px]'}`} />
+                            <img src={skills[id2].IMG} alt='cartoon character' className={`${id2 === 1 ? 'w-[330px]' : 'w-[420px]'}`} />
                         </div>
                     </div>
-
                     <div className={`hidden lg:block relative mx-[100px] lg:mx-[50px] xl:mx-[100px] scale-75 z-10 w-[80vw] lg:w-[30vw] xl:w-[30vw] h-[563px] border-2 border-black rounded-[6px]`}>
                         <div className="flex items-center justify-center mt-6">
                             <p className="text-[40px] mr-4">{skills[id3].iconT}</p>
@@ -181,7 +175,7 @@ function Skills() {
                             <p className={`text-center w-[95%] mt-8 ${id3 === 2 ? 'text-[23px]' : 'text-[27px] lg:text-[23px]'}`}>{skills[id3].phrase}</p>
                         </div>
                         <div className="absolute bottom-0">
-                            <img src={skills[id3].IMG} className={`${id3 === 1 ? 'w-[350px]' : 'w-[420px]'}`} />
+                            <img src={skills[id3].IMG} alt='cartoon character' className={`${id3 === 1 ? 'w-[350px]' : 'w-[420px]'}`} />
                         </div>
                     </div>
                 </div>

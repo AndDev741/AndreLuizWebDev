@@ -1,9 +1,7 @@
 import { Element } from "react-scroll"
 import emailjs from '@emailjs/browser';
 import { useState } from "react";
-//icons
 import { FaEnvelope, FaWhatsappSquare, FaLinkedin, FaGithub } from 'react-icons/fa'
-//images
 import contactIMG from './Assets/contactIMG.svg'
 import contact2IMG from './Assets/contact2IMG.svg'
 export default function Contact() {
@@ -14,7 +12,7 @@ export default function Contact() {
                     <div className="hidden lg:flex items-center bg-black w-[950px] h-[120px] mt-12">
                         <h2 className="text-white lg:text-start text-[50px] ml-12 font-hFont">Entre em contato comigo</h2>
                     </div>
-                    <img src={contact2IMG} className='w-[320px] mr-8 mt-10' />
+                    <img src={contact2IMG} alt='algumas ferramentas de comunicação' className='w-[320px] mr-8 mt-10' />
                 </div>
                 <div className="lg:flex justify-between items-start">
                     <div className="flex flex-col">
@@ -32,12 +30,12 @@ export default function Contact() {
                                 </div>
                                 <h2 className="text-[35px] mt-5">Me encontre na internet</h2>
                                 <div className="flex items-center justify-around mt-3 mb-[60px]">
-                                    <a href="https://www.linkedin.com/in/andr%C3%A9-luiz-dev-b9915b275/?locale=en_US" target={"_blank"}><FaLinkedin className="text-[60px] mx-10"/></a>
-                                    <a href="https://github.com/AndDev741" target={"_blank"}><FaGithub className="text-[60px] mx-10"/></a>
+                                    <a href="https://www.linkedin.com/in/andr%C3%A9-luiz-dev-b9915b275/?locale=en_US" target={"_blank"} rel='noreferrer'><FaLinkedin className="text-[60px] mx-10"/></a>
+                                    <a href="https://github.com/AndDev741" target={"_blank"} rel='noreferrer'><FaGithub className="text-[60px] mx-10"/></a>
                                 </div>
                             </div>
                         </div>
-                        <img src={contactIMG} className='hidden lg:block mt-[100px]' />
+                        <img src={contactIMG} alt='Pessoas juntas conectando um quebra-cabeças' className='hidden lg:block mt-[100px]' />
                     </div>
                     <div>
                         <Form />
@@ -52,7 +50,6 @@ function Form() {
         let [message, letMessage] = useState('')
         const sendEmail = (e) => {
           e.preventDefault();
-      
           emailjs.sendForm('service_5a2zisj', 'template_u81irwr', e.target, 'wBGfTr7_R-MzX399d')
             .then((result) => {
                 letMessage('Email enviada com sucesso!');
@@ -61,10 +58,8 @@ function Form() {
             });
             e.target.reset();
         }
-
-
     return(
-        <div className="">
+        <div>
             <h1 className="text-[40px] font-hFont text-center lg:hidden mt-4 ">Me envie um email</h1>
             <form onSubmit={sendEmail} className="text-3xl font-bold mt-7 m-1 lg:flex flex-col lg:mt-12">
                 <label htmlFor='name'>Nome</label>
@@ -83,8 +78,7 @@ function Form() {
                         <div className="flex flex-col lg:flex-col lg:ml-7 ">
                              <label className="text-2xl lg:text-[22px]"><input type={'checkbox'} name='seo' className='text-black cursor-pointer focus:outline-white w-8 h-8 mr-1 text-ce xl:mr-4 mb-4' />Estratégias de SEO</label>
                             <label className="text-2xl lg:text-[22px]"><input type={'checkbox'} name='other' className='text-black cursor-pointer focus:outline-white w-8 h-8 mr-1 text-ce xl:mr-4 mb-4' />Outras Soluções digitais</label>
-                        </div>
-                            
+                        </div>  
                     </div>
                 </div>
                 <label className="mt-2" >Mensagem</label>
@@ -94,7 +88,7 @@ function Form() {
                     <p className="mt-3 underline">{message}</p>
                 </div>
             </form>
-            <img src={contactIMG} className='block lg:hidden mt-12 ' />
+            <img src={contactIMG} alt='Pessoas juntas conectando um quebra-cabeças' className='block lg:hidden mt-12 ' />
         </div>
     )
 }
