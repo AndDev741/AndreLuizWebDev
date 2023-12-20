@@ -32,8 +32,19 @@
         },
         {
             "id": 3,
+            "title": "Todo List with Redux and Material UI",
+            "phrase": "This project is the embodiment of my dedicated learning journey into the realms of Redux and Material-UI concepts. Throughout this endeavor, I aimed to harmonize the efficiency of state management provided by Redux with the modern and intuitive aesthetics of Material-UI. Each line of code represents not only a task to be completed but a significant step in understanding these technologies, resulting in a Todo List that transcends mere functionality, standing out for its elegance and cohesion.",
+            "pcGIF": "todoListGIF.5ad514304b1f006d450e.webm",
+            "mbIMG": "todoListIMG.fcec1fadf8fdeee41a8f.png",
+            "pageLink": "https://todo-list-redux-material-ui.vercel.app/",
+            "githubLink": "https://github.com/AndDev741/TodoList-Redux-MaterialUI",
+            "privacy": false
+        },
+        {
+            "id": 3,
             "title": "",
             "phrase": "",
+            "pcGIF": "",
             "mbIMG": "",
             "pageLink": "",
             "githubLink": "",

@@ -12,9 +12,14 @@ import jmServiçosGIF from './Assets/jmServiçosGIF.webm'
 import jmServiçosIMG from './Assets/jmServiçosIMG.png'
 import GYRGIF from './Assets/GYRGIF.webm'
 import GYRIMG from './Assets/GYRIMG.png'
+import todoListIMG from './Assets/todoListIMG.png'
+import todoListGIF from './Assets/todoListGIF.webm'
 import siteIMG from './Assets/siteIMG.png'
 import designIMG from './Assets/designsIMG.png'
 import howIMG from './Assets/howIMG.png'
+
+console.log(todoListGIF)
+console.log(todoListIMG)
    
 export default function MyProjects() {
     let [githubLink, setGithubLink] = useState(false)
