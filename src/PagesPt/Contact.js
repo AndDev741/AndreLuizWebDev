@@ -30,7 +30,7 @@ export default function Contact() {
                                 </div>
                                 <h2 className="text-[35px] mt-5">Me encontre na internet</h2>
                                 <div className="flex items-center justify-around mt-3 mb-[60px]">
-                                    <a href="https://www.linkedin.com/in/andr%C3%A9-luiz-dev-b9915b275/?locale=en_US" target={"_blank"} rel='noreferrer'><FaLinkedin className="text-[60px] mx-10"/></a>
+                                    <a href="https://www.linkedin.com/in/andré-luiz-b9915b275/" target={"_blank"} rel='noreferrer'><FaLinkedin className="text-[60px] mx-10"/></a>
                                     <a href="https://github.com/AndDev741" target={"_blank"} rel='noreferrer'><FaGithub className="text-[60px] mx-10"/></a>
                                 </div>
                             </div>
