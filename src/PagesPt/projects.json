@@ -2,6 +2,16 @@
     "projects": [
         {
             "id": 0,
+            "title": "DreamBoards",
+            "phrase": "DreamBoards é uma aplicação web projetada para inspirar e ajudar os usuários a visualizarem seus sonhos e objetivos. Com uma interface intuitiva, o app permite criar e organizar quadros de sonhos pessoais, que ficam sempre acessíveis para consulta e motivação. A plataforma suporta login seguro, proporcionando uma experiência personalizada para os usuários que desejam se reconectar com suas aspirações a qualquer momento.",
+            "pcGIF": "DreamBoards.7b54d480de09957ab292.webm",
+            "mbIMG": "DreamBoards.8b2462454cbb0c82804c.png",
+            "pageLink": "https://dreamboards.up.railway.app/",
+            "githubLink": "https://github.com/AndDev741/DreamsBoard-Frontend",
+            "privacy": false
+        },
+        {
+            "id": 1,
             "title": "MindBlowing Mornings",
             "phrase": "Este projeto reflete minha dedicação em criar plataformas digitais visualmente cativantes e centradas no usuário. O design cativante do site e os recursos interativos são projetados para aprimorar as rotinas matinais dos usuários, promovendo positividade e atenção plena. Através deste projeto, demonstrei meu compromisso em criar experiências digitais que inspirem e energizem as pessoas à medida que começam o dia.",
             "pcGIF": "mindBlowingGIF.e9052efb1069255c6d63.webm",
@@ -11,7 +21,7 @@
             "privacy": true
         },
         {
-            "id": 1,
+            "id": 2,
             "title": "Gardening Your Relationships",
             "phrase": "Este projeto incorpora minha paixão por criar experiências online significativas. Com uma mistura harmoniosa de estética e funcionalidade, o site promove um ambiente digital acolhedor para o cultivo de relacionamentos saudáveis. Seu design intuitivo e recursos envolventes exemplificam meu compromisso em criar soluções digitais que inspiram a conexão e o crescimento pessoal.",
             "pcGIF": "GYRGIF.8f7b338dbd9a9658d7b7.webm",
@@ -21,7 +31,7 @@
             "privacy": true
         },
         {
-            "id": 2,
+            "id": 3,
             "title": "JM Serviços",
             "phrase": "JM Serviços, uma empresa líder especializada em serviços elétricos. O site incorpora um design moderno, garantindo uma experiência amigável para o usuário em todos os dispositivos. Ele reflete o profissionalismo da JM Serviços, facilitando a navegação sem problemas para os visitantes. Desenvolver este site foi um testemunho do meu compromisso em entregar soluções digitais funcionais e visualmente atraentes.",
             "pcGIF": "jmServiçosGIF.d44a76f750ca1f282e47.webm",
@@ -31,7 +41,7 @@
             "privacy": false
         },
         {
-            "id": 3,
+            "id": 4,
             "title": "Todo List com Redux e Material UI",
             "phrase": "Este projeto é a materialização do meu aprendizado dedicado aos conceitos de Redux e Material-UI. Nessa jornada, busquei harmonizar a eficiência do gerenciamento de estado proporcionado pelo Redux com a estética moderna e intuitiva do Material-UI. Cada linha de código representa não apenas uma tarefa a ser concluída, mas um passo significativo na compreensão dessas tecnologias, resultando em uma Todo List que vai além da funcionalidade, destacando-se pela elegância e coesão.",
             "pcGIF": "todoListGIF.5ad514304b1f006d450e.webm",
@@ -41,7 +51,7 @@
             "privacy": false
         },
         {
-            "id": 4,
+            "id": 5,
             "title": "",
             "phrase": "",
             "mbIMG": "",
