@@ -1,5 +1,6 @@
 import { Element } from "react-scroll"
 import { useState } from "react"
+import { useTranslation } from "react-i18next"
 import { FaRegUserCircle, FaReact, FaRegMap } from 'react-icons/fa'
 import { SlTrophy } from 'react-icons/sl'
 import { HiCodeBracket, HiMiniPaintBrush ,HiRocketLaunch} from 'react-icons/hi2' 
@@ -13,6 +14,7 @@ import aDesignImg  from './Assets/aDesigner.svg'
 import aCommImg  from './Assets/acomm.svg'
 
 export default function About() {
+    const {t} = useTranslation();
     return(
         <Element name="about" className="">
             <div className="font-pFont">
@@ -21,47 +23,55 @@ export default function About() {
                         <img src={devIMG} alt='man in a computer' />
                     </div>
                     <div className="flex items-center lg:justify-start justify-center bg-black lg:w-[930px]">
-                        <h1 className="text-white text-[45px] lg:ml-8 font-hFont m-1">About Me</h1>
+                        <h1 className="text-white text-[45px] lg:ml-8 font-hFont m-1">{t("About Me")}</h1>
                     </div>
                 </div>
                 <div className="flex flex-col lg:flex-row-reverse items-center justify-center ">
                     <div className="flex flex-col items-center lg:items-start justify-center mt-8 lg:mt-0 lg:w-[40%]">
                         <div className="flex flex-col lg:flex-row items-center justify-center my-6 lg:my-2">
                             <FaRegUserCircle className="text-[60px] text-black mb-2 lg:mr-4" />
-                            <p className="text-center text-3xl">My name is <strong>André Luiz</strong></p>
+                            <p className="text-center text-3xl">
+                                {t("My name is")} <strong>{t("André Luiz")}</strong>
+                            </p>
                         </div>
                         <div className="flex flex-col lg:flex-row  items-center justify-center my-6 lg:my-2">
                             <FaRegMap className="text-[60px] text-black mb-2 lg:mr-4" />
-                            <p className="text-center text-3xl">I'm from <strong>Brazil</strong></p>
+                            <p className="text-center lg:text-start text-3xl">
+                                {t("I'm from")} <strong>{t("BrazilAndPortugal")}</strong>
+                            </p>
                         </div>
                         <div className="flex flex-col lg:flex-row  items-center justify-center my-6 lg:my-2">
                             <FaReact className="text-[60px] text-black mb-2 lg:mr-4" />
-                            <p className="text-center lg:text-start text-3xl lg:w-[100%]">I study <u>Analysis and systems development</u></p>
+                            <p className="text-center lg:text-start text-3xl lg:w-[100%]">
+                                {t("I study")} <u>{t("Analysis and systems development")}</u>
+                            </p>
                         </div>
                         <div className="flex flex-col  items-center justify-center my-6 lg:my-2">
                             <SlTrophy className="text-[60px] text-black mb-2 " />
-                            <p className="text-center text-3xl lg:w-[80%]">My motivation its be a <strong>better professional</strong> every day, <u>helping people</u> with they <strong>image on internet</strong></p>
+                            <p className="text-center text-3xl lg:w-[80%]">
+                                {t("My motivation its be a")} <strong>{t("better professional")}</strong> {t("every day")}, <u>{t("helping people")}</u> {t("with they")} <strong>{t("image on internet")}</strong>
+                            </p>
                         </div>
                     </div>
                     <div className="flex items-center justify-center lg:justify-end lg:w-1/2">
                         <img src={aboutIMG} alt='Man using tech skills' className="animate-smoothMoveMB lg:animate-smoothMove lg:mr-5 sm:w-[80%] md:w-[60%] lg:w-[90%]" />
                     </div>
                 </div>
-                <Skills />
+                <Skills t={t}/>
             </div>
         </Element>
     )
 }
 
-function Skills() {
+function Skills({t}) {
     let [id , setId] = useState(0);
     let [id2 , setId2] = useState(1);
     let [id3 , setId3] = useState(2);
     let skills = [
         {
             id: 0,
-            title: "Web Developer",
-            phrase: `I know all the main features of actuality to make modern and functional websites that your company need`,
+            title: t("Web Developer"),
+            phrase: t("I know all the main features of actuality to make modern and functional websites that your company need"),
             IMG: aDevImg,
             iconT: <HiCodeBracket/>,
             icon1: <SiReact/>,
@@ -71,8 +81,8 @@ function Skills() {
         },
         {
             id: 1,
-            title: "Web Designer",
-            phrase: "I’m always studying new ways to make spectacular  website pages, with a lot of identity and design",
+            title: t("Web Designer"),
+            phrase: t("I’m always studying new ways to make spectacular  website pages, with a lot of identity and design"),
             IMG: aDesignImg,
             iconT: <HiMiniPaintBrush/>,
             icon1: <BiHighlight/>,
@@ -82,13 +92,13 @@ function Skills() {
         },
         {
             id: 2,
-            title: "Comunication",
-            phrase: "My communication with clients its one of the most important steps of my work, so i’m clearly and a good listener",
+            title: t("Comunication"),
+            phrase: t("My communication with clients its one of the most important steps of my work, so i’m clearly and a good listener"),
             IMG: aCommImg,
             iconT: <HiRocketLaunch/>,
-            icon1: 'I speak two languages:',
-            icon2: 'Portuguese',
-            icon3: 'English',
+            icon1: t("I speak two languages:"),
+            icon2: t('Portuguese'),
+            icon3: t('English'),
             icon4: ''
         },
         {
@@ -98,6 +108,7 @@ function Skills() {
             IMG: ""
         }
     ]
+    
     function setSkill() {
         setId(id + 1);
         if (id === 2){
@@ -119,7 +130,7 @@ function Skills() {
     }
     return(
         <div className="font-pFont">
-            <h1 className="text-center text-[50px] font-hFont mt-3">My skills</h1>
+            <h1 className="text-center text-[50px] font-hFont mt-3">{t("My skills")}</h1>
             <div className="flex items-center justify-center">
                 <div className="flex items-center justify-center">
                     <div className={`relative lg:absolute z-50 bg-white w-[90vw] sm:w-[70vw] lg:w-[38vw] xl:w-[35vw] h-[563px] border-2 border-black rounded-[6px]`}>
