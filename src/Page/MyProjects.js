@@ -90,8 +90,8 @@ export default function MyProjects() {
                                 </a>
                             </div>
                         </div>
-                        <div className="bg-[#d9d9d9] rounded-[12px] w-[276px] h-[452px]">
-                            <img src={`${process.env.PUBLIC_URL}/static/media/${language === 'en' ? data.projectsEn[id].mbIMG : data.projectsPt[id].mbIMG}`} alt='Mind blowing morning site' className="w-[276px] border-[1px] border-black rounded-[12px]" />
+                        <div className="bg-[#d9d9d9] rounded-[12px] w-[276px] h-full">
+                            <img src={`${process.env.PUBLIC_URL}/static/media/${language === 'en' ? data.projectsEn[id].mbIMG : data.projectsPt[id].mbIMG}`} alt='site photos' className="w-[276px] border-[1px] border-black rounded-[12px]" />
                         </div>
                         <div className="flex flex-col items-center">
                         <div className="hidden lg:block bg-[#d9d9d9] rounded-[12px] w-[620px] h-[352px]">
