@@ -14,6 +14,8 @@ import GYRGIF from './Assets/GYRGIF.webm'
 import GYRIMG from './Assets/GYRIMG.png'
 import dreamBoardIMG from './Assets/DreamBoards.png'
 import dreamBoardGIF from './Assets/DreamBoards.webm'
+import todoListIMG from "./Assets/todoListIMG.png"
+import todoListGIF from "./Assets/todoListGIF.webm"
 import dudaMoraisIMG from './Assets/dudamoraisprint.png'
 import dudaMoraisGIF from './Assets/dudamoraisGif.webm'
 import siteIMG from './Assets/siteIMG.png'
@@ -22,8 +24,6 @@ import howIMG from './Assets/howIMG.png'
 
    
 export default function MyProjects() {
-    console.log(dudaMoraisGIF)
-    console.log(dudaMoraisIMG)
     const {t, i18n} = useTranslation();
     const language = i18n.language;
     let [githubLink, setGithubLink] = useState(false)
@@ -91,7 +91,7 @@ export default function MyProjects() {
                             </div>
                         </div>
                         <div className="bg-[#d9d9d9] rounded-[12px] w-[276px] h-[452px]">
-                            <img src={`${process.env.PUBLIC_URL}/static/media/${language === 'en' ? data.projectsEn[id].mbIMG : data.projectsPt[id].mbIMG}`} alt='Mind blowing morning site' className="w-[276px] h-[452px] rounded-[12px]" />
+                            <img src={`${process.env.PUBLIC_URL}/static/media/${language === 'en' ? data.projectsEn[id].mbIMG : data.projectsPt[id].mbIMG}`} alt='Mind blowing morning site' className="w-[276px] border-[1px] border-black rounded-[12px]" />
                         </div>
                         <div className="flex flex-col items-center">
                         <div className="hidden lg:block bg-[#d9d9d9] rounded-[12px] w-[620px] h-[352px]">
