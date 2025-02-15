@@ -24,7 +24,7 @@ export default function Contact() {
                                 <p className="text-3xl mt-6 lg:font-hFont lg:text-[35px]">{t("Send me a message")}</p>
                                 <div className="flex flex-col items-center">
                                     <FaWhatsappSquare className="text-[55px] mt-3"/>
-                                    <p className="text-3xl mt-2 ml-2">+55 62983264291</p>
+                                    <p className="text-3xl mt-2 ml-2">+351 938293829</p>
                                 </div>
                                 <div className="flex flex-col items-center">
                                     <FaEnvelope className="text-[50px] mt-3"/>
